@@ -1,0 +1,654 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xui.pdf}
+\hypersetup{pdftitle={Lecture | A Macroeconomic Approach to Optimal Unemployment Insurance}}
+
+\begin{document}
+
+\title{A Macroeconomic Approach to Optimal Unemployment Insurance}
+\information{Camille Landais, Pascal Michaillat, Emmanuel Saez}%
+{American Economic Journal: Economic Policy, 2018}%
+{https://www.pascalmichaillat.org/4.html}
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{Baily-Chetty theory of optimal UI}
+\begin{itemize}
+\item insurance-incentive tradeoff:
+\begin{itemize}
+\item UI provides consumption insurance
+\item but UI reduces job search
+\end{itemize}
+\item two aspects of the debate are missing:
+\begin{itemize}
+\item sometimes jobs may be unavailable
+\item UI may affect job creation
+\end{itemize}
+\item because the Baily-Chetty model is partial equilibrium:
+\begin{itemize}
+\item endogenous labor supply
+\item but fixed labor market tightness
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{This paper}
+\begin{itemize}
+\item general-equilibrium model of optimal UI 
+\begin{itemize}
+\item endogenous labor supply
+\item endogenous labor demand
+\item equilibrium labor market tightness
+\end{itemize}
+\item model captures 3 effects of UI:
+\begin{itemize}
+\item UI may reduce job search
+\item UI may alleviate rat race for jobs
+\item UI may raise wages and deter job creation
+\end{itemize}
+\item application: optimal UI over the business cycle
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\heading{A matching model of UI}
+\end{frame}
+
+\begin{frame}
+\frametitle{UI program}
+\begin{itemize}
+\item moral hazard: search effort is unobservable
+\item employed workers receive $c^{e}$ 
+\item unemployed workers receive $c^{u}$
+\item \al{replacement rate $R$} measures generosity of UI:
+\begin{itemize}
+\item $R\equiv 1-(c^{e}-c^{u})/w$
+\item $R=$ benefit rate + tax rate
+\item workers keep fraction $1-R$ of earnings
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Labor market}
+\begin{itemize}
+\item measure 1 of identical workers, initially unemployed
+\begin{itemize}
+\item search for jobs with effort $e$
+\end{itemize}
+\item measure 1 of identical firms
+\begin{itemize}
+\item post $v$ vacancies to hire workers
+\end{itemize}
+\item CRS matching function: $l=m(\underset{+}{e},\underset{+}{v})$
+\item \al{labor market tightness: $\t\equiv v/e$}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Matching probabilities}
+\begin{itemize}
+\item vacancy-filling probability:
+\begin{align*}
+q(\underset{-}{\t})\equiv \frac{l}{v}= m\of{\frac{1}{\t},1}
+\end{align*}
+\item job-finding rate per unit of effort: 
+\begin{align*}
+f(\underset{+}{\t})\equiv \frac{l}{e} =  m\of{1,\t}
+\end{align*}
+\item \al{job-finding probability: $e\cdot f(\t) < 1$}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Matching cost: $\r$ recruiters per vacancy}
+\begin{itemize}
+\item \al{employees = $\bs{1+\tau(\underset{+}{\t})}\cdot $ producers}
+\item \underline{proof:}
+\begin{align*}
+\underbrace{l}_{\text{employees}} &= \underbrace{n}_{\text{producers}}+ \underbrace{\r\cdot v}_{\text{recruiters}}\\
+l &=  n+ \r\cdot \frac{l}{q(\t)}\\
+l &=\underbrace{\bs{1+\frac{\r}{q(\t)-\r}}}_{\equiv 1+\tau(\t)} \cdot  n
+\end{align*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Representative worker}
+\begin{itemize}
+\item consumption utility $U(c)$, search disutility $\p(e)$
+\item \al{utility gain from work: $\D U\equiv U(c^{e})-U(c^{u})$}
+\item solves $\max_{e}\bc{U(c^{u})+ e\cdot f(\t)\cdot \D U-\p(e)}$
+\item \al{effort supply $e^{s}(\underset{+}{\t},\underset{+}{\D U})$} gives optimal effort:
+\begin{align*}
+\p'(e^{s}(\t,\D U))=f(\t)\cdot \D U
+\end{align*}
+\item \al{labor supply $l^{s}(\underset{+}{\t},\underset{+}{\D U})$} gives employment rate:
+\begin{align*}
+l^{s}(\t,\D U)=e^{s}(\t,\D U)\cdot f(\t)
+\end{align*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Labor supply}
+\includegraphics[scale=\sfig,page=1]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Representative firm}
+\begin{itemize}
+\item hires $l$ employees
+\begin{itemize}
+\item  $n=l/[1+\tau(\t)]$ producers
+\item $l-n$ recruiters
+\end{itemize}
+\item production function: $y(n)$
+\item solves $\max_{l}\bc{y\of{l/[1+\tau(\t)]}- w\cdot  l}$
+\item \al{labor demand $l^{d}(\underset{-}{\t},\underset{-}{w})$} gives optimal employment:
+\begin{align*}
+y'\of{\frac{l^{d}}{1+\tau(\t)}}= \bs{1+\tau(\t)}\cdot w
+\end{align*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Labor demand}
+\includegraphics[scale=\sfig,page=2]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Labor-market equilibrium}
+\begin{itemize}
+\item as in any matching model, need a price mechanism
+\begin{itemize}
+\item \al{general wage schedule: $w=w(\t,\D U)$}
+\end{itemize}
+\item tightness equilibrates supply \& demand:
+\begin{align*}
+l^{s}(\t,\D U)  =  l^{d}(\t,w(\t,\D U))
+\end{align*}
+\item \al{equilibrium tightness: $\t(\D U)$}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Labor-market equilibrium}
+\includegraphics<1>[scale=\sfig,page=3]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{Sufficient-statistic formula\\for optimal UI}
+\end{frame}
+
+\begin{frame}
+\frametitle{Government's problem}
+\begin{itemize}
+\item choose $\D U$ to maximize welfare:
+\begin{align*}
+SW=l\cdot U(c^{e})+(1-l)\cdot U(c^{u})-\p(e)
+\end{align*}
+\item subject to budget constraint:
+\begin{align*}
+y\of{\frac{l}{1+\tau(\t)}} = l\cdot c^e+ (1-l)\cdot c^u
+\end{align*}
+\item to workers' response:  $e=e^{s}(\t,\D U)$ \& $l=l^{s}(\t,\D U)$
+\item and to \al{equilibrium constraint: $\t=\t(\D U)$}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Condition for optimal UI}
+\begin{itemize}
+\item express all the variables as a function of $(\t,\D U)$ 
+\item government solves $\max_{\D U} SW(\t(\D U),\D U)$
+\item first-order condition:
+\begin{align*}
+\underbrace{0=\pdw{SW}{\D U}{\t}}_{\text{Baily-Chetty formula}}+ \underbrace{\pdw{SW}{\t}{\D U}\cdot \od{\t}{\D U}}_{\text{correction}}
+\end{align*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Baily-Chetty formula}
+\begin{align*}
+R=R^{*}\of{\e^{m},\frac{U'(c^{u})}{U'(c^{e})}}
+\end{align*}
+\begin{itemize}
+\item $\e^{m}>0$: microelasticity of unemployment wrt UI
+\begin{itemize}
+\item measures disincentive from search
+\item $R^{*}$ is decreasing in $\e^{m}$
+\end{itemize}
+\item $U'(c^{u})/U'(c^{e})>1$: ratio of marginal utilities
+\begin{itemize}
+\item measures need for insurance
+\item $R^{*}$ is increasing in $U'(c^{u})/U'(c^{e})$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Microelasticity of unemployment}
+\includegraphics<1>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=5]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{$\pdwx{SW}{\t}{\D U}$ measured by efficiency term}
+\begin{itemize}
+\item efficiency term depends on several sufficient statistics:
+\begin{itemize}
+\item $\tau(\t)$: recruiter-producer ratio
+\item $u$: unemployment rate
+\item $1-\eta$: elasticity of the job-finding rate $f(\t)$
+\item $\D U$: the utility gain from work
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficiency term and efficient tightness}
+\includegraphics<1>[scale=\sfig,page=6]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=7]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=8]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Macroelasticity of unemployment}
+\includegraphics<1>[scale=\sfig,page=9]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=10]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=11]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{$1-\e^{M}/\e^{m}$ gives effect of UI on $\t$}
+\includegraphics<1>[scale=\sfig,page=12]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=13]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=14]{\pdf}%
+\end{frame}
+ 
+\begin{frame}
+\frametitle{Optimal UI formula in sufficient statistics}
+\begin{align*} 
+\underbrace{R= R^{*}\of{\e^{m},\frac{U'(c^{u})}{U'(c^{e})}}}_{\text{Baily-Chetty formula}}+\underbrace{\bp{1-\frac{\e^{M}}{\e^{m}}}\cdot \text{efficiency term}}_{\text{correction}}
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimal UI versus Baily-Chetty level}
+\begin{itemize}
+\item optimal UI $=$ Baily-Chetty if
+\begin{itemize}
+\item UI has no effect on tightness: $\e^{M}=\e^{m}$
+\item or tightness is efficient: efficiency term $= 0$
+\end{itemize}
+\item optimal UI $\neq$ Baily-Chetty if
+\begin{itemize}
+\item UI affects tightness: $\e^{M}\neq \e^{m}$
+\item and tightness is inefficient: efficiency term $\neq 0$
+\end{itemize}
+\item[\then] optimal UI $>$ Baily-Chetty if UI pushes tightness toward efficiency
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\heading{Optimal UI over the business cycle: theory}
+\end{frame}
+
+\begin{frame}
+\frametitle{Three matching models}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
+& \multicolumn{3}{c}{model}\\
+\cmidrule(r){2-4}
+ & standard  & rigid-wage & job-rationing\\
+\toprule
+prod. function &  linear&  linear&  concave\\
+wage & bargaining & rigid & rigid \\
+reference 	& Pissarides [2000] & Hall [2005] & Michaillat [2012]  \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Business cycles in the models}
+\begin{itemize}
+\item Baily-Chetty level is broadly constant
+\item $1-\e^{M}/\e^{m}$ has constant sign
+\item efficiency term changes sign over business cycle
+\begin{itemize}
+\item under labor demand shocks
+\item $>0$ in slumps and $<0$ in booms
+\item generates cyclicality of optimal UI
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Standard model: $1-\e^{M}/\e^{m}<0$}
+\includegraphics<1>[scale=\sfig,page=15]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=16]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=17]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Rigid-wage model: $1-\e^{M}/\e^{m}=0$}
+\includegraphics<1>[scale=\sfig,page=18]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=19]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=20]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Job-rationing model: $1-\e^{M}/\e^{m}>0$}
+\includegraphics<1>[scale=\sfig,page=21]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=22]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=23]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Cyclicality of optimal UI}
+\begin{itemize}
+\item tightness is too low in slumps \& too high in booms
+\item \al{standard model: procyclical UI}
+\begin{itemize}
+\item moral hazard \& job creation: $1-\e^{M}/\e^{m}<0$
+\item UI should be reduced in slumps to stimulate tightness
+\end{itemize}
+\item \al{rigid-wage model: acyclical UI}
+\begin{itemize}
+\item only moral hazard: $1-\e^{M}/\e^{m}=0$
+\item UI has no effect on tightness
+\end{itemize}
+\item \al{job-rationing model: countercyclical UI}
+\begin{itemize}
+\item moral hazard \& rat race: $1-\e^{M}/\e^{m}>0$
+\item UI should be raised in slumps to stimulate tightness
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{Optimal UI over the business cycle: application to the US}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Microelasticity of unemployment wrt UI}
+\begin{itemize}
+\item many estimates of the microelasticity
+\item obtained by comparing identical jobseekers receiving different UI benefits in the same market
+\item plausible range of estimates: $0.4 \leq \e^m \leq 0.8$
+\begin{itemize}
+\item estimates of the microelasticity of unemployment duration wrt potential duration of UI benefits
+\end{itemize}
+\item key references:
+\begin{itemize}
+\item Katz, Meyer [1990]
+\item Landais [2015]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Macroelasticity of unemployment wrt UI}
+\begin{itemize}
+\item few estimates of the macroelasticity
+\item obtained by comparing identical labor markets receiving different UI benefits
+\item plausible range of estimates: $0 \leq \e^M \leq 0.3$
+\item key references:
+\begin{itemize}
+\item Card, Levine [2000]
+\item Hagedorn et al [2016]
+\item Chodorow-Reich, Coglianese, Karabarbounis [2019]
+\item Dieterle, Bartalotti, Brummet [2020]
+\item Boone et al [2021]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Comparing microelasticity \& macroelasticity}
+\begin{itemize}
+\item estimates obtained separately suggest $1-\e^M/\e^m>0$:
+\begin{equation*}
+\al{0< \e^M <0.3 <0.4 < \e^m<0.8}
+\end{equation*}
+\item implied range for the elasticity wedge: 0.25--1
+\begin{itemize}
+\item lower bound: $1-\e^M/\e^m = 1-0.3/0.4 = 0.25$
+\item upper bound:  $1-\e^M/\e^m = 1-0/0.8 = 1$
+\end{itemize}
+\item one exception: Johnston, Mas [2018] find $1-\e^M/\e^m = 0$ when they estimate $\e^m$ and $\e^M$ in MO data
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Response of tightness to UI}
+\begin{itemize}
+\item Marinescu [2017] finds that an increase in UI raises tightness
+\begin{itemize}
+\item corresponding elasticity wedge: : $1-\e^{M}/\e^{m}=0.4$
+\end{itemize}
+\item Levine [1993] \& Farber, Valletta [2015] find that an increase in UI leads uninsured jobseekers to find jobs faster
+\begin{itemize}
+\item[\then] an increase in UI raises tightness
+\item[\then] $1-\e^M/\e^m > 0 $
+\end{itemize}
+\item evidence from Austria: Lalive et al [2015] find that an increase in UI raises tightness
+\begin{itemize}
+\item corresponding elasticity wedge: $1-\e^{M}/\e^{m}=0.2$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Rat-race \& job-creation channels}
+\begin{itemize}
+\item RCT evidence of rat-race mechanism:
+\begin{itemize}
+\item negative spillover of more intense job search  
+\item Crepon et al [2013] in France
+\item Gautier et al [2012] in Denmark 
+\end{itemize}
+\item no evidence of job-creation mechanism:
+\begin{itemize}
+\item re-employment wages unaffected by UI
+\item Krueger, Mueller [2016]
+\item Marinescu [2017]
+\item Johnston, Mas [2018]
+\item also true in Austria: Card et al [2007]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Summary of the evidence: $1-\e^{M}/\e^{m}\approx 0.4$}
+\begin{itemize}
+\item the evidence shows that $1-\e^{M}/\e^{m} \geq 0$
+\begin{itemize}
+\item reasonable median estimate: $1-\e^{M}/\e^{m} = 0.4$
+\end{itemize}
+\item the evidence supports the rat-race mechanism but not the job-creation mechanism
+\begin{itemize}
+\item further support for $1-\e^{M}/\e^{m} > 0$
+\end{itemize}
+\item additional evidence suggests that the elasticity wedge may be larger in bad times
+\begin{itemize}
+\item Valletta [2014]    
+\item Toohey [2017]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Elasticity wedge in good times}
+\includegraphics[scale=\sfig,page=26]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Elasticity wedge in bad times}
+\includegraphics[scale=\sfig,page=25]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Elasticity wedge in the US}
+\includegraphics[scale=\sfig,page=24]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Jobseeking \& recruiting in the US}
+\includegraphics[scale=\sfig,page=27]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficiency term in the US}
+\includegraphics[scale=\sfig,page=28]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Efficiency term $=0$ \so UI = Baily-Chetty}
+\includegraphics[scale=\sfig,page=29]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficiency term $<0$ \so UI $<$ Baily-Chetty}
+\includegraphics[scale=\sfig,page=30]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficiency term $>0$ \so UI $>$ Baily-Chetty}
+\includegraphics[scale=\sfig,page=31]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Effective replacement rate in the US}
+\includegraphics[scale=\sfig,page=32]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimal replacement rate in the US}
+\includegraphics[scale=\sfig,page=33]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Sensitivity analysis: microelasticity}
+\includegraphics[scale=\sfig,page=35]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Sensitivity analysis: cost of unemployment}
+\includegraphics[scale=\sfig,page=36]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Sensitivity analysis: matching elasticity}
+\includegraphics[scale=\sfig,page=37]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Sensitivity analysis: risk aversion}
+\includegraphics[scale=\sfig,page=38]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Sensitivity analysis: consumption drop}
+\includegraphics[scale=\sfig,page=39]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{Optimal UI over the business cycle: simulations of job-rationing model}
+\end{frame}
+
+\begin{frame}
+\begin{table}
+\footnotesize\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcc}
+Parameter & Description  & Source\\
+\toprule
+$\a=0.73$ & Production function: concavity & $1-\frac{\e^{M}}{\e^{m}}=0.4$\\
+$\g = 1$ & Relative risk aversion & Chetty [2006] \\
+$s = 2.8\%$ & Monthly job-separation rate & CPS, 1990--2014 \\
+$\eta=0.6$ & Matching elasticity  & Petrongolo,\\
+& & Pissarides [2001]\\
+$\m=0.60$ & Matching efficacy & $\t=0.43$\\
+$\r=0.80$ & Matching cost & $\tau=2.3\%$\\
+$\z=0.5$ & Real wage: rigidity & Michaillat [2014] \\
+$\o=0.73$ & Real wage: level & $u=6.1\%$\\
+$\s=0.17$ & Disutility from home production: convexity & $\odl{c^{h}}{c^{u}}=0.2$\\
+$\x=1.43$ & Disutility from home production: level &  $1-\frac{c^{h}}{c^{e}}=12\%$\\
+$\k=0.22$ & Disutility from job search: convexity & $\e^{m}_{b}=0.4$\\
+$\d=0.33$ & Disutility from job search: level &  $e=1$\\
+$z=-0.14$ & Disutility from unemployment &  $Z=0.3 \times \f \times w$\\
+\bottomrule\end{tabular*}
+\end{table}   
+\end{frame}
+
+\begin{frame}
+\frametitle{Unemployment rate over the cycle}
+\includegraphics[scale=\sfig,page=40]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Replacement rate over the cycle}
+\includegraphics[scale=\sfig,page=41]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Recruiters/producers over the cycle}
+\includegraphics[scale=\sfig,page=42]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficiency term over the cycle}
+\includegraphics[scale=\sfig,page=43]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Microelasticity over the cycle}
+\includegraphics[scale=\sfig,page=46]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Macroelasticity over the cycle}
+\includegraphics[scale=\sfig,page=45]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Elasticity wedge over the cycle}
+\includegraphics[scale=\sfig,page=44]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Consumption drop over the cycle}
+\includegraphics[scale=\sfig,page=47]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Job search over the cycle}
+\includegraphics[scale=\sfig,page=48]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Home production over the cycle}
+\includegraphics[scale=\sfig,page=49]{\pdf}%
+\end{frame}
+
+
+\end{document}

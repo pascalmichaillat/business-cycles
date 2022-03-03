@@ -1,0 +1,355 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xwunk.pdf}
+\hypersetup{pdftitle={Lecture | Resolving New Keynesian Anomalies With Wealth in the Utility Function}}
+
+\begin{document}
+
+\title{Resolving New Keynesian Anomalies With Wealth in the Utility Function}
+\information{Pascal Michaillat, Emmanuel Saez}%
+{Review of Economics and Statistics, 2021}%
+{https://www.pascalmichaillat.org/11.html}
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{anomalies in NK model at ZLB}
+\begin{enumerate}
+\item collapse of output \& inflation
+\begin{itemize}
+\item Eggertsson, Woodford [2004]
+\item Werning [2011]
+\end{itemize}
+\item implausibly large effects of forward guidance
+\begin{itemize}
+\item del Negro, Giannoni, Patterson [2015]
+\item Cochrane [2017]
+\end{itemize}
+\item implausibly large effects of government spending
+\begin{itemize}
+\item Christiano, Eichenbaum, Rebelo [2011]
+\item Cochrane [2017]
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{existing remedies to ZLB anomalies}
+\begin{itemize}
+	\item Cochrane [2018]: fiscal theory of price level
+	\item Bilbiie [2018] \& Acharya, Dogra [2020]: heterogeneous agents
+  \item Gabaix [2020]: bounded rationality
+	\item Diba, Loisel [2021]: interest on bank reserves
+	\item but these remedies complicate the textbook model
+	\begin{itemize}
+	\item sometimes equilibrium system becomes 3-dimensional
+	\item sometimes derivations are complicated by heterogeneity or bounded rationality
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper: minimal deviation from textbook}
+\begin{itemize}
+\item New Keynesian model with relative wealth in the utility function
+\item only one additional parameter
+\begin{itemize}
+\item marginal utility of wealth in Euler equation
+\end{itemize}
+\item[\then] equilibrium system remains 2-dimensional
+\begin{itemize}
+\item 2 variables: output \& inflation
+\item 2 differential equations: Euler equation \& Phillips curve
+\end{itemize}
+\item[\then] derivations remain exactly the same
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{why would people value wealth in itself?}
+\begin{itemize}
+\item Keynes [1919]: ``The duty of saving became nine-tenths of virtue and the growth of the cake the object of true religion\ldots. Saving was for old age or for your children; but \al{this was only in theory}---the virtue of the cake was that it was never to be consumed, neither by you nor by your children after you.''
+\item Irving Fisher [1930]: ``A man may include in the benefits of his wealth\ldots the \al{social standing} he thinks it gives him, or political power and influence, or the mere miserly sense of possession, or the satisfaction in the mere process of further accumulation.'' 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{why would people value wealth in itself?}
+\begin{itemize}
+\item Camerer, Loewenstein, Prelec [2005]: ``brain-scans conducted while people win or lose money suggest that money activates similar reward areas as do other \al{primary reinforcers} like food and drugs, which implies that money confers direct utility, rather than simply being valued only for what it can buy.''
+\item evidence from economics, social psychology, sociology, social neuroscience: wealth is a \al{marker of social status}, and people value high social status
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\heading{NK model with wealth in the utility}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item self-employed household $j \in [0,1]$ maximizes utility
+\begin{equation*}
+\int_{0}^{\infty}e^{-\d t} \bs{\ln{c_{j}(t)}+\al{u\of{\frac{b_{j}(t)}{p(t)}-\frac{b(t)}{p(t)}}}- \k h_{j}(t)-\frac{\g}{2} \pi_{j}(t)^2}dt
+\end{equation*}
+\vspace{-0.5cm}
+\begin{itemize}
+\item consumption index: $c_{j}(t) = \bs{\int_{0}^{1}c_{jk}(t)^{(\e-1)/\e}\,dk}^{\e/(\e-1)}$
+\item aggregate wealth:  $b(t) = \int_{0}^{1} b_{j}(t)\,dj$
+\item inflation: $\pi_{j}(t) = \dot{p}_{j}(t)/p_{j}(t)$
+\end{itemize}
+\item  subject to budget constraint:
+\begin{equation*}
+\dot{b}_{j}(t) = i(t) b_{j}(t) + p_{j}(t)  y_{j}(t) - \int_0^1 p_{k}(t) c_{jk}(t)\,dk
+\end{equation*}
+\item to production function: $y_{j}(t) = a h_{j}(t)$
+\item to demand for good $i$: $y_{j}(t) = \bs{p_{j}(t)/p(t)}^{-\e}  c(t) $ 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{equilibrium: euler-phillips system}
+\begin{itemize}
+\item Phillips curve: standard
+\begin{equation*}
+\dot{\pi} = \d\pi- \frac{\e\k}{\g a} \bp{y - y^n} \quad \text{with} \quad y^n = \frac{\e-1}{\e} \cdot \frac{a}{\k}
+\end{equation*}
+\item Euler equation: ``discounted''
+\begin{equation*}
+\frac{\dot{y}}{y} = r(\pi) + \al{u'(0) y} -\d
+\end{equation*}
+\vspace{-1cm}
+\begin{itemize}
+\item financial returns: real interest rate $= r(\pi) = i(\pi)-\pi$
+\item hedonic returns: MRS(wealth, consumption) $= u'(0)y^n$ 
+\end{itemize}
+\end{itemize}
+\begin{equation*}
+\text{so} \quad \frac{\dot{y}}{y} = r(\pi)- r^n + \al{u'(0)} (y-y^n)\quad \text{with} \quad r^n =\d-u'(0)y^n
+\end{equation*}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{two models}
+\begin{itemize}
+\item NK: standard New Keynesian model 
+\begin{equation*}
+u'(0)=0
+\end{equation*}
+\item WUNK: wealth-in-the-utility New Keynesian model
+\begin{equation*}
+u'(0)>\frac{\e\k}{\d\g a}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{output \& inflation collapse}
+\end{frame}
+
+\begin{frame}
+\frametitle{scenario: ZLB}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{NK | phase diagram in normal times\only<5>{: source}}
+\includegraphics<1>[scale=\sfig,page=2]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=3]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<5>[scale=\sfig,page=6]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{NK | phase diagram at ZLB\only<3>{: saddle}}
+\includegraphics<1>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=7]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=8]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{NK | ZLB episode}
+\includegraphics<1>[scale=\sfig,page=9]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=10]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{NK | longer ZLB: output \& inflation collapse}
+\includegraphics[scale=\sfig,page=11]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | phase diagram in normal times\only<3>{: source}}
+\includegraphics<1>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=12]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=13]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | phase diagram at ZLB\only<4>{: source}}
+\includegraphics<1>[scale=\sfig,page=14]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=15]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=16]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=17]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | ZLB episode}
+\includegraphics<1>[scale=\sfig,page=18]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=19]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | longer ZLB converges to steady state}
+\includegraphics<1>[scale=\sfig,page=20]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{forward guidance}
+\end{frame}
+
+\begin{frame}
+\frametitle{scenario: ZLB + forward guidance}
+\includegraphics<1>[scale=\sfig,page=21]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{NK | \textbf<3->{ZLB} + \textbf<1-2>{forward guidance}}
+\includegraphics<1>[scale=\sfig,page=22]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=23]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=24]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=25]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{NK | longer guidance: boom at ZLB}
+\includegraphics<1>[scale=\sfig,page=26]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=27]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=28]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | \textbf<3->{ZLB} + \textbf<1-2>{forward guidance}}
+\includegraphics<1>[scale=\sfig,page=29]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=30]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=31]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=32]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | longer guidance: limited effect}
+\includegraphics<1>[scale=\sfig,page=33]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{Government spending}
+\end{frame}
+
+\begin{frame}
+\frametitle{scenario: ZLB + government spending $g$}
+\includegraphics[scale=\sfig,page=34]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{NK | ZLB + no spending}
+\includegraphics[scale=\sfig,page=35]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{NK | ZLB + small spending}
+\includegraphics[scale=\sfig,page=36]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{NK | ZLB + medium spending}
+\includegraphics[scale=\sfig,page=37]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{NK | ZLB + large spending: boom at ZLB}
+\includegraphics[scale=\sfig,page=38]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | ZLB + no spending}
+\includegraphics[scale=\sfig,page=39]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{WUNK | ZLB + small spending}
+\includegraphics[scale=\sfig,page=40]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | ZLB + medium spending}
+\includegraphics[scale=\sfig,page=41]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{WUNK | ZLB + large spending: limited effect}
+\includegraphics[scale=\sfig,page=42]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\heading{other ZLB properties in WUNK}
+\end{frame}
+
+\begin{frame}
+\frametitle{paradox of thrift: higher MU of wealth}
+\includegraphics<1>[scale=\sfig,page=43]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=44]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{paradox of toil: lower disutility of labor}
+\includegraphics<1>[scale=\sfig,page=45]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=46]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{paradox of flexibility: lower price-adjustment cost}
+\includegraphics<1>[scale=\sfig,page=47]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=48]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{above-one government-spending multiplier}
+\includegraphics<1>[scale=\sfig,page=49]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=50]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{assessment of WUNK assumption}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item WUNK assumption in measurable statistics:
+\begin{equation*}
+\d-r^n > \frac{\l}{\d}
+\end{equation*}
+\item $\d =$ annual time discount rate $\approx  43\%$
+\begin{itemize}
+\item Frederick, Loewenstein, O'Donoghue [2002]
+\item Andersen, Harrison, Lau, Rutstrom [2014]
+\end{itemize}
+\item $r^n =$ natural rate of interest $\approx 2\%$
+\item $\l= $ output-gap coefficient in Phillips curve $\approx 1.6\%$
+\begin{itemize}
+\item Mavroeidis, Plagborg-Moller, Stock [2014]
+\end{itemize}
+\item assumption holds: \al{$43\% - 2\% = 0.41>0.037 = 1.6\%/43\%$}
+\begin{itemize}
+\item lowest acceptable household discount rate: $27\%$
+\item lowest acceptable firm discount rate: $16\%$
+\end{itemize}
+\end{itemize}
+\end{frame}	
+
+\end{document}

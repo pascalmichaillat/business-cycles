@@ -1,0 +1,560 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xstimulus.pdf}
+\hypersetup{pdftitle={Lecture | Optimal Public Expenditure with Inefficient Unemployment}}
+
+\begin{document}
+
+\title{Optimal Public Expenditure with Inefficient Unemployment}
+\information{Pascal Michaillat, Emmanuel Saez}%
+{Review of Economic Studies, 2019}%
+{https://www.pascalmichaillat.org/6.html}
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{Main stabilization policy: monetary policy}
+\begin{itemize}
+\item policymakers rely primarily on monetary policy for stabilization
+\begin{itemize}
+\item accordingly: extensive research on optimal monetary policy
+\end{itemize}
+\item but monetary policy is sometimes constrained
+\begin{itemize}
+\item zero lower bound (Japan, USA, EU)
+\item monetary union (EU, USA)
+\item[\then] high unemployment
+\end{itemize}
+\item then other stabilization policies are needed
+\begin{itemize}
+\item but: very little is known about these alternative policies 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{This paper: optimal public expenditure} 
+\begin{itemize}
+\item public expenditure is commonly used for stabilization
+\begin{itemize}
+\item US: Great Depression (New Deal), Great Recession (ARRA)
+\end{itemize}
+\item framework: matching model from \href{https://www.pascalmichaillat.org/3.html}{Michaillat \& Saez (2015)}
+\item outcome: formula linking optimal stimulus spending to 3 sufficient statistics
+\begin{enumerate}
+\item unemployment gap
+\item unemployment multiplier
+\item elasticity of substitution between public consumption \& private consumption
+\end{enumerate}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimal public expenditure: existing results}	
+\begin{itemize}    
+\item Samuelson (1954):
+\begin{itemize}
+	\item public goods financed by lump-sum taxation
+	\item efficient level of production
+	\item rule: spend until marginal utilities are equalized
+	\item but: what if production is inefficient?
+\end{itemize}
+\item Keynes (1936):
+\begin{itemize}
+	\item no tradeoffs between public consumption \& private consumption (multiplier $>1$)
+	\item rule: spend to fill output gap
+	\item but: what if there is a tradeoff?
+\end{itemize}
+\item our theory blends the theories of Samuelson \& Keynes
+\end{itemize}
+\end{frame}
+
+\begin{frame} 
+\heading{Informal description of the model}
+\end{frame}
+
+\begin{frame}
+\frametitle{A service economy, without firms}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{An asset for saving}
+\includegraphics[scale=\sfig,page=3]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Private services ($c$) \& public services ($g$)}
+\includegraphics<1>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=5]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Matching: not all services are sold}
+\includegraphics<1>[scale=\sfig,page=8]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=9]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Matching: costly to purchase services}
+\includegraphics<1>[scale=\sfig,page=6]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=7]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Socially efficient rate of unemployment}
+\begin{itemize}    
+\item too much unemployment is bad
+\begin{itemize}
+	\item too many services are idle
+\end{itemize}
+\item too little unemployment is bad
+\begin{itemize}
+	\item too many services are devoted to recruiting
+\end{itemize}
+\item there is a socially efficient rate of unemployment ($u^*$)
+\begin{itemize}
+	\item number of services enjoyed ($y=g+c$) is maximized
+\end{itemize}
+\item[\then] when unemployment is efficient, Samuelson rule holds
+\end{itemize}
+\end{frame}
+
+\begin{frame} 
+\heading{Formal description of the model}
+\end{frame}
+
+\begin{frame}
+\frametitle{Structure}
+\begin{itemize}
+\item dynamic matching model
+\begin{itemize}
+\item building on \href{https://www.pascalmichaillat.org/3.html}{Michaillat \& Saez (2015)}
+\end{itemize}
+\item identical, self-employed households
+\item government
+\item 2 consumption goods traded on a matching market
+\begin{itemize}
+\item public services \& private services
+\end{itemize}
+\item 1 asset for saving
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Matching market}
+\begin{itemize}
+\item capacity of each household: $k$ services
+\item household purchases: $C(t)$ private services
+\item government purchases: $G(t)$ public services
+\item output: $Y(t)=C(t)+G(t)<k$
+\item \al{unemployment rate: $u(t)=1-Y(t)/k$}
+\item price of services: $p(t)$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Matching function}
+\begin{itemize}
+\item number of vacancies: $v(t)$ 
+\item matching function: $h(t)=\o\cdot \bs{k-Y(t)}^{\h}\cdot v(t)^{1-\h}$
+\item \al{market tightness: $x(t)= v(t)/(k-Y(t))$}
+\item selling rate \& buying rate: 
+\begin{align*}
+f(x(t))&=\frac{h(t)}{k-Y(t)} = \o\cdot x(t)^{1-\h}\\
+q(x(t))&= \frac{h(t)}{v(t)}= \o\cdot x(t)^{-\h}
+\end{align*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Market flows}
+\begin{itemize}
+\item relationships separate at rate $s$
+\item given $x$, output and unemployment converge to
+\begin{equation*}
+Y(x,k) =\frac{f(x)}{s+f(x)}\cdot k,\quad u(x) =\frac{s}{s+f(x)}
+\end{equation*}
+\item convergence to steady state is extremely fast, so we assume:
+\begin{itemize}
+\item \al{$Y(t)=Y(\underset{+}{x(t)},k)$}
+\item \al{$u(t)=u(\underset{-}{x(t)})$}
+\item see Hall (2005)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Matching cost: $\r$ services per vacancy}
+\begin{itemize}
+\item output ($Y$) = consumption ($y$) + matching cost
+\begin{equation*}
+Y  = y + \r\cdot v= y + s\cdot Y \cdot \frac{\r}{q(x)}
+\end{equation*}
+\item \al{matching wedge: $\tau(\underset{+}{x})=s\cdot\r/\bs{q(x)-s\cdot \r}$} 
+\item total consumption: $y=Y/\bs{1+\tau(x)}$
+\item private consumption: $c=C/\bs{1+\tau(x)}$
+\item public consumption: $g=G/\bs{1+\tau(x)}$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Supply structure: summary}
+\begin{figure}
+\includegraphics<1>[scale=\sfig,page=10]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=11]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=12]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=13]{\pdf}%
+\includegraphics<5>[scale=\sfig,page=14]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Demand structure: example}
+\begin{itemize}
+\item asset: land $l(t)$ in fixed supply $l_0$
+\begin{itemize}
+\item traded on a competitive market
+\item Iacoviello (2005) and Liu, Wang, Zha (2013)
+\end{itemize}
+\item households choose $c(t)$ and $l(t)$ to maximize utility
+\begin{equation*}
+\int_{0}^{+\infty}e^{-\d\cdot t}\cdot \bs{\Uc(c,g)+ \al{\Vc\bp{l}}} dt
+\end{equation*}
+\item subject to flow budget constraint
+\begin{equation*}
+\dot{l}= p\cdot\al{\bs{1-u(x)}} \cdot k - p\cdot\al{\bs{1+\tau(x)}}\cdot c - T
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Aggregate demand in the example}
+\begin{itemize}
+\item market clearing on housing market: $l=l_0$
+\item private demand $c^{d}(x,g,p)$ is solution to Euler equation:
+\begin{equation*}
+\pd{\Uc}{c}(\al{c},g)=\frac{p\cdot (1+\tau(x))\cdot \Vc'(l_0)}{\d}
+\end{equation*}
+\item price of services relative to housing: $p=p(x,g)$
+\begin{itemize}
+\item general price mechanism
+\item (assumption required in matching model)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Equilibrium tightness $x(g)$}
+\begin{figure}
+\includegraphics[scale=\sfig,page=15]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Unemployment multiplier $m$}
+\begin{figure}
+\includegraphics[scale=\sfig,page=16]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Socially efficient unemployment rate $u^*$}
+\begin{figure}
+\includegraphics[scale=\sfig,page=17]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inefficiently high unemployment rate}
+\begin{figure}
+\includegraphics[scale=\sfig,page=18]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inefficiently low unemployment rate}
+\begin{figure}
+\includegraphics[scale=\sfig,page=19]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\heading{Optimal public expenditure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Government's problem}
+\begin{itemize}
+\item households' flow utility is $\Uc(c,g)$
+\item public expenditure is financed by a lump-sum tax to maintain a balanced budget
+\item given $x(g)$, the government chooses $g$ to maximize 
+\begin{equation*}
+\Uc\of{\underbrace{y(x(g),k)-g}_{c},g}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Correcting the Samuelson formula}
+\begin{itemize}
+\item first-order condition of government's problem is
+\begin{equation*}
+0 =\pd{\Uc}{g}-\pd{\Uc}{c}+\pd{\Uc}{c}\cdot \pd{y}{x} \cdot \od{x}{g}
+\end{equation*}
+\item optimal public expenditure satisfies
+\begin{equation*}
+\underbrace{1 = MRS_{gc}}_{\text{Samuelson formula}}+ \al{\underbrace{\pd{y}{x} \cdot \od{x}{g}}_{\text{correction}}}
+\end{equation*}
+\begin{itemize}
+\item $MRS_{gc} = (\pdx{\Uc}{g})/(\pdx{\Uc}{c})$ 	
+\item correction due to effect of public expenditure on welfare through tightness
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Introducing estimable statistics}
+\begin{itemize}
+\item $(g/c)^{*}$: Samuelson spending
+\item elasticity of substitution between $g$ and $c$:
+\begin{equation*}
+1-MRS_{gc}  \approx \frac{1}{\al{\e}}\cdot \frac{g/c-(g/c)^*}{(g/c)^*}
+\end{equation*}
+\item unemployment gap:
+\begin{equation*}
+\pd{y}{x} \propto \al{u-u^{*}}
+\end{equation*}
+\item unemployment multiplier:
+\begin{equation*}
+\od{x}{g} \propto \al{m} = -\frac{y}{1-u}\cdot\od{u}{g}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Implicit formula for optimal stimulus}
+\vspace{-1cm}
+\begin{equation*}
+\frac{g/c-(g/c)^{*}}{(g/c)^{*}} \approx z_0 \e m \cdot \frac{u-u^{*}}{u^{*}}
+\end{equation*}
+\vspace{-0.5cm}
+\begin{itemize}
+\item $g/c-(g/c)^{*}$: stimulus spending 
+\item $\e$: elasticity of substitution between $g$ and $c$
+\begin{itemize}
+\item[=] marginal social value of public spending
+\end{itemize}
+\item $m$: unemployment multiplier
+\begin{itemize}
+	\item decrease in $u$ when $g$ increases by 1\% of $y$
+\end{itemize}
+\item $u-u^{*}$: unemployment gap
+\begin{itemize}
+\item[=] productive inefficiency 
+\end{itemize}
+\item $z_0$: constant of the parameters $\h$, $u^*$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Departures from Samuelson rule}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
+ & $m < 0$ & $m = 0$ & $m > 0$\\
+\toprule
+$u>u^{*}$  & $\ral{g/c<(g/c)^{*}}$  & $\bal{g/c=(g/c)^{*}}$ & $\gal{g/c>(g/c)^{*}}$ \\
+$u=u^{*}$ & $\bal{g/c=(g/c)^{*}}$ & $\bal{g/c=(g/c)^{*}}$  & $\bal{g/c=(g/c)^{*}}$ \\ 
+$u<u^{*}$ & $\gal{g/c>(g/c)^{*}}$ & $\bal{g/c=(g/c)^{*}}$ & $\ral{g/c<(g/c)^{*}}$ \\ 
+\bottomrule
+\end{tabular*}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Marginal value of public services}
+\begin{itemize}
+\item $\e=0$: digging holes or building pyramids
+\begin{itemize}
+\item $g/c=(g/c)^{*}$: Samuelson rule holds, no stimulus spending
+\end{itemize}
+\item $\e\to +\infty$: perfect substitution
+\begin{itemize}
+\item $u=u^{*}$: entirely fill unemployment gap, as in Keynes
+\end{itemize}
+\item $\e\in (0,+\infty)$: medium substitution
+\begin{itemize}
+\item medium stabilization: $g/c\neq (g/c)^{*}$ but $u\neq u^{*}$
+\item[\then] partially fill unemployment gap
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Making the formula explicit}
+\begin{itemize}
+\item implicit formula: not useful for quantitative results because $u$ in RHS responds to $g/c$ in LHS
+\item starting from $(g/c)^{*}$ and $u_{0}\neq u^{*}$:
+\begin{equation*}
+\frac{g/c-(g/c)^{*}}{(g/c)^{*}}\approx z_0 \e m\cdot \frac{\al{u(g/c)}-u^{*}}{u^{*}}
+\end{equation*}
+\item first-order Taylor expansion of $u$ at $u((g/c)^{*})=u_{0}$:
+\begin{equation*}
+\frac{u-u^{*}}{u^{*}}\approx \frac{\al{u_{0}}-u^{*}}{u^{*}}-z_1 \al{m} \cdot\frac{g/c-(g/c)^{*}}{(g/c)^{*}}
+\end{equation*}
+\item $z_1$: constant of the parameters $u^*$, $(g/c)^*$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Explicit formula}
+\begin{itemize}
+\item optimal $g/c$ depends on fixed quantities:
+\begin{equation*}
+\frac{g/c-(g/c)^{*}}{(g/c)^{*}}\approx \frac{z_0\e m}{1+  z_1 z_0 \e m^{2}} \cdot \frac{\al{u_{0}}-u^{*}}{u^{*}}
+\end{equation*}
+\item optimal $u$ depends on fixed quantities:
+\begin{equation*}
+u\approx u^{*}+\frac{u_{0}-u^{*}}{1+ z_1 z_0 \e m^{2}}
+\end{equation*}
+\item approximations valid up to 2nd-order terms
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Results with distortionary taxation}
+\begin{itemize}
+\item endogenous capacity: $\Uc(c,g,k)$ with $\pdx{\Uc}{k}<0$
+\item linear income tax: $T=\al{\tau^{L}}\cdot (1-u(x))\cdot k$
+\item everything remains valid
+\begin{itemize}
+ \item but $(g/c)^{*}$ is lower because of tax distortions
+ \end{itemize} 
+\item however: link between multipliers changes
+\begin{itemize}
+\item no tax  distortions: $ m = dY/dG$
+\item tax distortions:  $ m > dY/dG$
+\item with taxes, we may have $dY/dG<0$ but $m>0$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\heading{Numerical illustration:\\Great Recession in the US}
+\end{frame}
+
+\begin{frame}
+\frametitle{Starting point: winter 2008--2009}
+\begin{itemize}
+\item unemployment $=6\%$ and public spending $=16.5\%$ of GDP
+\begin{itemize}
+	\item for illustration: we take these values as efficient
+\end{itemize}
+\item unemployment is forecast to increase to $9\%$
+\begin{itemize}
+	\item initial unemployment gap $= 9\% - 6\% = 3\%$
+\end{itemize}
+\item we compute optimal stimulus for various elasticities of substitution and unemployment multipliers
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimal stimulus spending (\% of GDP)}
+\includegraphics<1>[scale=\sfig,page=20]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=21]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=22]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=23]{\pdf}%
+\includegraphics<5>[scale=\sfig,page=24]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimal stimulus spending for various $\e$}
+\includegraphics[scale=\sfig,page=25]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Unemployment under optimal stimulus}
+\includegraphics[scale=\sfig,page=26]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{Some simulations}
+\end{frame}
+
+\begin{frame}
+\frametitle{Optimal stimulus in calibrated model}
+\includegraphics[scale=\sfig,page=27]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Unemployment rate in calibrated model}
+\includegraphics[scale=\sfig,page=28]{\pdf}%
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Multiplier in calibrated model}
+\includegraphics[scale=\sfig,page=29]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Quality of approximations in formula}
+\includegraphics[scale=\sfig,page=30]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{Summary \& discussion}
+\end{frame}
+
+\begin{frame}
+\begin{enumerate}
+\item  $dY/dG>1$ is not necessary for stimulus
+\begin{itemize}
+\item stimulus requires unemployment multiplier $>0$ (as in data)
+\end{itemize}
+\item bang-for-the-buck logic does not hold
+\begin{itemize}
+\item strongest stimulus for $m=0.4$
+\item same stimulus for $m=0.1$ and $m=1.4$
+\end{itemize}
+\item completely filling the unemployment gap is not optimal
+\begin{itemize}
+\item optimal to partially fill unemployment gap 
+\item except if public services = private services
+\end{itemize}
+\item low marginal social value of $g$ does not imply no stimulus
+\begin{itemize}
+\item optimal to reduce unemployment gap 
+\item except if public services = digging holes
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Distortionary taxes $\nRightarrow$ smaller stimulus}
+\begin{itemize}
+\item formula remains valid with distortionary taxation
+\begin{itemize}
+	\item but Samuelson spending is lower
+\end{itemize}
+\item however, $dY/dG$ is not useful anymore because $dY/dG \neq m$
+\begin{itemize}
+\item $dY/dG = m$ + labor-supply response to taxes 
+\item labor-supply distortion reduces $dY/dG$ but not $m$
+\item so: $ m > dY/dG$
+\item possibly: $dY/dG<0$ while $m>0$
+\end{itemize}
+\item distortionary taxation does not imply smaller stimulus
+\begin{itemize}
+\item only average public spending is lower
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\end{document}
