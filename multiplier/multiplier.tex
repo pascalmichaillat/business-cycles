@@ -1,0 +1,608 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xmultiplier.pdf}
+\hypersetup{pdftitle={Lecture | A Theory of Countercyclical Government Multiplier}}
+
+\begin{document}
+
+\title{A Theory of Countercyclical Government Multiplier}
+\information{Pascal Michaillat}%
+{American Economic Journal: Macroeconomics, 2014}%
+{https://www.pascalmichaillat.org/2.html}
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{government multiplier is countercyclical}
+\begin{itemize}
+\item US evidence:
+\begin{itemize}
+\item Auerbach \& Gorodnichenko [2012]
+\item Candelon \& Lieb [2013]
+\item Fazzari, Morley, \& Panovska [2015]
+\end{itemize}
+\item international evidence:
+\begin{itemize}
+\item Auerbach \& Gorodnichenko [2013]
+\item Jorda \& Taylor [2016]
+\item Holden \& Sparrman [2018]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{existing explanation: zero lower bound}
+\begin{itemize}
+\item multiplier is large in bad times because of the zero lower bound
+\begin{itemize}
+\item Eggertsson [2011]
+\item Christiano, Eichenbaum, \& Rebelo [2011] 
+\item Eggertsson \& Krugman [2012]
+\end{itemize}
+\item but evidence of countercyclical multipliers is obtained away from the zero lower bound
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper's explanation: labor market slack}
+\begin{itemize}
+\item multiplier $\equiv$ additional number of employed workers when 1 worker is hired in the public sector 
+\item multiplier doubles when unemployment rises from 5\% to 8\%
+\begin{itemize}
+\item irrespective of the zero lower bound
+\end{itemize}
+\item mechanism based on the matching model of the labor market from \href{https://www.pascalmichaillat.org/1.html}{Michaillat [2012]}
+\begin{itemize}
+\item unemployment = rationing + frictional
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{importance of public employment}
+\begin{itemize}
+\item public employment $= 63\%$ of government consumption expenditures in the US, 1947--2011
+\begin{itemize}
+\item even more if purchase of services (contractors) are included
+\end{itemize}
+\item stimulus packages often raise public employment
+\begin{itemize}
+\item Great Depression [Neumann, Fishback, \& Kantor 2010]
+\end{itemize} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{mechanism: crowding out}
+\begin{itemize}
+\item public employment crowds out private employment
+\begin{itemize}
+\item because government and firms compete for the same jobseekers
+\end{itemize}
+\item formally: an increase in public employment raises labor market tightness
+\begin{itemize}
+\item[\then] raises recruiting costs
+\item[\then] reduces private employment
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{mechanism: bad times vs. good times}
+\begin{itemize}
+\item bad times: labor demand is low so unemployment is high and competition for workers is weak
+\begin{itemize}
+\item[\then] weak crowding out
+\end{itemize}
+\item good times: labor demand is high so unemployment is low and competition for workers is strong
+\begin{itemize}
+\item[\then] strong crowding out
+\end{itemize}
+\item procyclical crowding out \then countercyclical multiplier
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{matching model\\with public employment}
+\end{frame}
+
+\begin{frame}
+\frametitle{public employment}
+\begin{itemize}
+\item the government employs $g_{t}$ workers
+\begin{itemize}
+\item public employment is financed by an income tax
+\end{itemize}
+\item public and private jobs are identical
+\begin{itemize}
+\item same wage $w$
+\item same job-separation rate $s$
+\end{itemize}
+\item unemployed workers indiscriminately apply to public and private jobs
+\item public and private vacancies compete for the same unemployed workers 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{matching function}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=3]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{worker flows: job creation \& separation}
+\includegraphics<1>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=6]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{labor supply}
+\begin{itemize}
+\item labor supply $\equiv$ workers' employment rate when labor market flows are balanced
+\item balanced flows: E $\to$ U = U $\to$ E
+\begin{itemize}
+\item $s\cdot n = f(\t)\cdot u = f(\t)\cdot \bs{1-n+s\cdot n}$
+\end{itemize}
+\item expression for labor supply:
+\begin{equation*}
+n^{s}(\underset{+}{\t})=\frac{f(\t)}{s+ (1-s)\cdot  f(\t)}
+\end{equation*}
+\begin{itemize}
+\item equivalent to the Beveridge curve
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{representative firm}
+\begin{itemize}
+\item hires $l_{t}-(1-s)\cdot l_{t-1}$ new workers by posting vacancies
+\begin{itemize}
+\item cost per vacancy: $r\cdot a$
+\item vacancy-filling probability: $q(\t_{t})$
+\end{itemize}
+\item employs $l_{t}$ workers paid $w$
+\item production function:  $y_{t}= a\cdot l_{t}^{\a}$
+\begin{itemize}
+\item $a$: level of technology
+\item $\a\in(0,1]$: marginal returns to labor
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{firm's problem}
+\begin{itemize}
+\item given wage and tightness $\bc{w, \t_t}$, the firm chooses employment $\bc{l_{t}}$ to maximize discounted profits
+\begin{equation*}
+\sum_{t=0}^{+\infty} \b^t \cdot\bs{\underbrace{a \cdot l_t^{\a}}_{\text{production}}-\underbrace{w\cdot l_t}_{\text{wage bill}}-\underbrace{\frac{r\cdot a}{q(\t_{t})}}_{\text{hiring cost}}\cdot \underbrace{\bs{l_{t}-(1-s)\cdot l_{t-1}}}_{\text{new hires}}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{private labor demand}
+\begin{itemize}
+\item first-order condition with respect to $l$ in steady state:
+\begin{equation*}
+\underbrace{a\cdot\a\cdot l^{\a-1}}_{\text{marginal product of labor}} = \underbrace{w}_{\text{wage}} +\underbrace{\bs{1-\b\cdot (1-s)}\cdot \frac{r\cdot a}{q(\t)}}_{\text{recruiting cost}}
+\end{equation*}
+\item given $\t$ and $w$, the private labor demand is firms' desired employment rate in steady state:
+\begin{equation*}
+l^{d}(\underset{-}{\t},\underset{-}{w}) = \bs{\frac{1}{\a}\cdot \bc{\frac{w}{a}+\bs{1-\b\cdot (1-s)}\cdot \frac{r}{q(\t)}}}^{\frac{-1}{1-\a}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{wage schedule}
+\begin{itemize}
+\item there are mutual gains from matching
+\item many wage schedules are consistent with equilibrium
+\item we assume a simple wage schedule: $w= \o\cdot a^{\g}$
+\begin{itemize}
+\item $\g=0$: fixed wage (unresponsive to $a$)
+\item $\g=1$: flexible wage (proportional to $a$) 
+\item $\g\in(0,1)$: partially rigid wage (subproportional to $a$)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{aggregate labor demand}
+\begin{itemize}
+\item using the wage schedule, we rewrite the private labor demand as a function of $\t$ and $a$:
+\begin{equation*}
+l^{d}(\underset{-}{\t},\underset{+}{a}) = \bs{\frac{1}{\a}\cdot \bc{\o\cdot a^{\g-1}+\bs{1-\b\cdot (1-s)}\cdot \frac{r}{q(\t)}}}^{\frac{-1}{1-\a}}
+\end{equation*}
+\item aggregate labor demand:
+\begin{equation*}
+n^{d}(\underset{-}{\t},\underset{+}{a},\underset{+}{g}) = l^{d}(\t,a) + g
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{steady-state equilibrium}
+\begin{itemize}
+\item tightness equalizes labor supply and demand:
+\begin{equation*}
+n^{s}(\underset{+}{\t})= n^{d}(\underset{-}{\t},\underset{+}{a},\underset{+}{g})
+\end{equation*}
+\item recession: low technology $a$
+\item expansion: high technology $a$
+\item stimulus: high public employment $g$
+\item note: in matching models, the convergence to steady state is almost immediate [Hall 2005]
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{equilibrium diagram}
+\includegraphics[scale=\sfig,page=7]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{properties of the multiplier}
+\end{frame}
+
+\begin{frame}
+\frametitle{definition of the multiplier}
+\begin{itemize}
+\item the multiplier is $\l\equiv \odx{n}{g}$
+\begin{itemize}
+\item additional number of employed workers when 1 worker is hired in the public sector
+\end{itemize}
+\item another expression: $\l=1+\odx{l}{g}$
+\begin{itemize}
+\item $1$: mechanical effect of public employment
+\item $\odx{l}{g}<0$: crowding out of private employment by public employment
+\item weaker crowding out \so larger multiplier 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{assumptions from \href{https://www.pascalmichaillat.org/1.html}{Michaillat [2012]}}
+\begin{itemize}
+\item $\a<1$: diminishing marginal returns to labor in production
+\begin{itemize}
+\item[\then] in $(n,\t)$ plane: $n^{d}(\t,a,g)$ is downward-sloping 
+\end{itemize}
+\item $\g<1$: partial wage rigidity
+\begin{itemize}
+\item[\then] in $(n,\t)$ plane: $n^{d}(\t,a,g)$ shifts inward when $a$ rises
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{multiplier properties when $\a<1$ and $\g<1$}
+\begin{itemize}
+\item multiplier $< 1$
+\begin{itemize}
+\item there is crowding out of private employment by public employment
+\end{itemize}
+\item but multiplier $> 0$
+\begin{itemize}
+\item crowding out is less than one-for-one
+\end{itemize}
+\item multiplier is larger when $a$ is lower
+\begin{itemize}
+\item higher unemployment \then weaker crowding out \then larger multiplier
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{positive multiplier}
+\includegraphics<1>[scale=\sfig,page=8]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=9]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=10]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=11]{\pdf}%
+\end{frame}    
+
+\begin{frame}
+\frametitle{countercyclical multiplier}
+\includegraphics<1>[scale=\sfig,page=11]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=12]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{intuition for the mechanism}
+\begin{itemize}
+\item when unemployment is high:
+\begin{itemize}
+\item government hires unemployed workers who would not have been hired otherwise
+\item[\then] public employment does not affect private employment much
+\end{itemize}
+\item but when unemployment is low:
+\begin{itemize}
+\item government hires workers that would have been hired by the private sector otherwise
+\item[\then] public employment heavily crowds out private employment
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{what happens if $\a=1$?}
+\begin{itemize}
+\item $\a=1$: linear production function
+\begin{itemize}
+\item standard assumption [Pissarides 2000; Hall 2005]
+\end{itemize}
+\item in $(n,\t)$ plane: labor demand is horizontal
+\item[\then] a change in $g$ does not change $\t$
+\item[\then] crowding out is one-for-one
+\item[\then]  multiplier $=0$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{what happens if $\g=1$?}
+\begin{itemize}
+\item $\g=1$: flexible wage
+\begin{itemize}
+\item as with Nash bargaining
+\end{itemize}
+\item in $(n,\t)$ plane: labor demand is independent of $a$
+\item[\then] $\t$ is independent of $a$
+\item[\then] crowding out is independent of $a$
+\item[\then] multiplier is acyclical
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{New Keynesian model}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{standard features}
+\begin{itemize}
+\item fluctuations arise from technology shocks
+\item representative large household 
+\begin{itemize}
+\item works for intermediate-good firms
+\item consumes final good
+\item saves using nominal bonds
+\end{itemize}
+\item representative final-good firm
+\begin{itemize}
+\item uses intermediate goods as input
+\item sells output on perfectly competitive market
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{standard features}
+\begin{itemize}
+\item intermediate-good firms
+\begin{itemize}
+\item use labor as input
+\item sell output on monopolistically competitive market to final-good firm
+\item set price subject to a price-setting friction
+\end{itemize} 
+\item monetary policy
+\begin{itemize}
+\item interest-rate rule (Taylor rule)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{nonstandard features}
+\begin{itemize}
+\item labor market with matching structure from \href{https://www.pascalmichaillat.org/1.html}{Michaillat [2012]}
+\begin{itemize}
+\item instead of perfect/monopolistic competition
+\end{itemize}
+\item quadratic price-adjustment cost from Rotemberg [1982] 
+\begin{itemize}
+\item instead of Calvo [1983] pricing
+\end{itemize}
+\item government consumption is public employment
+\begin{itemize}
+\item instead of purchase of goods
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{9 endogenous variables}
+\begin{itemize}
+\item exogenous variables:
+\begin{equation*}
+\bc{a_{t},g_{t}}_{t=0}^{+\infty}
+\end{equation*}
+\item endogenous variables:
+\begin{equation*}
+\bc{\t_{t},n_{t},l_{t},w_{t},\L_{t},c_{t},y_{t},R_{t},\pi_{t}}_{t=0}^{+\infty}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{labor market equations}
+\begin{itemize}
+\item equation \#1: wage schedule
+\begin{equation*}
+w_{t}=\o\cdot a_{t}^{\g},\;\g<1
+\end{equation*}
+\item equation \#2: labor supply
+\begin{equation*}
+n_{t}=(1-s)\cdot n_{t-1}+f(\t_{t})\cdot \bs{1-(1-s)\cdot n_{t-1}}
+\end{equation*}
+\item equation \#3: public-employment policy
+\begin{equation*}
+n_{t}=l_{t}+g_{t}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{production equations}
+\begin{itemize}
+\item equation \#4: production function
+\begin{equation*}
+y_{t}=a_{t}\cdot l_{t}^{\a},\;\a<1
+\end{equation*}
+\item equation \#5: resource constraint
+\begin{equation*}
+y_{t}-\frac{r\cdot a_{t}}{q(\t_{t})}\cdot\bs{n_{t}-(1-s)\cdot n_{t-1}}=c_{t}\cdot \bs{1+\frac{\f}{2}\cdot \pi_{t}^{2}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{bond market equations}
+\begin{itemize}
+\item equation \#6: Euler equation
+\begin{equation*}
+1=\b\cdot \E[t]{\frac{R_{t}}{1+\pi_{t+1}}\cdot\frac{c_{t}}{c_{t+1}}}
+\end{equation*}
+\item equation \#7: Taylor rule
+\begin{equation*}
+R_{t}=\frac{1}{\b}\cdot \bp{1+\pi_{t}}^{\mu_{\pi}\cdot (1-\mu_{R})}\cdot \bp{\b\cdot R_{t-1}}^{\mu_{R}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{firm equations}
+\begin{itemize}
+\item equation \#8: optimal pricing decision
+\begin{equation*}
+\pi_{t}\cdot\bp{\pi_{t}+1}=\frac{1}{\f} \cdot\frac{y_{t}}{c_{t}} \bs{\e \cdot\L_{t}-\bp{\e-1}}+\b\cdot\E[t]{\pi_{t+1}\cdot \bp{\pi_{t+1}+1}}
+\end{equation*}
+\item equation \#9: optimal employment decision
+\begin{equation*}
+\L_{t}\cdot \a\cdot l_{t}^{\a-1} = \frac{w_{t}}{a_{t}}+\frac{r}{q(\t_{t})}-\b \cdot (1-s)\cdot  \E[t]{\frac{c_{t}}{c_{t+1}}\cdot \frac{a_{t+1}}{a_{t}}\cdot \frac{r}{q(\t_{t+1})}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{steady state $(n,\t)$ with zero inflation}
+\begin{itemize}
+\item equation \#2: labor supply
+\begin{equation*}
+n^{s}(\t)=\frac{f(\t)}{s+(1-s)\cdot f(\t)}
+\end{equation*}
+\item equation \#8: $\L=(\e-1)/\e$
+\item equation \#1: $w=\o\cdot a^{\g}$
+\item equation \#9: firms' labor demand
+\begin{equation*}
+\frac{\e-1}{\e}\cdot \a\cdot \bs{l^{d}(\t,a)}^{\a-1}=\o\cdot a^{\g-1}+\bp{1-\b \cdot (1-s)}\cdot\frac{r}{q(\t)}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{simulations}
+\end{frame}
+
+\begin{frame}
+\frametitle{simulation method}
+\begin{itemize}
+\item simulate nonlinear model under perfect foresight using shooting algorithm
+\item scenario \#1: \bal{public employment without stimulus}
+\begin{itemize}
+\item value of $g$: $\bal{\hat{g}_{t} = \ol{g}}$
+\item value of any $x$: $\bal{\hat{x}_{t}}$
+\item \bal{solid blue lines in graphs}
+\end{itemize}
+\item scenario \#2: \ral{public employment with stimulus}
+\begin{itemize}
+\item value of $g$: $\ral{g^{*}_{t}>\ol{g}}$
+\item value of any $x$: $\ral{x^{*}_{t}}$
+\item \ral{dashed red lines in graphs}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{computation of the multiplier}
+\begin{itemize}
+\item instantaneous multiplier in a simulation:
+\begin{equation*}
+\frac{\ral{n^{*}_{t}}-\bal{\hat{n}_{t}}}{\ral{g^{*}_{t}}-\bal{\hat{g}_{t}}}
+\end{equation*}
+\item cumulative multiplier in a simulation:
+\begin{equation*}
+\frac{\sum_{t=0}^{T}\ral{n^{*}_{t}}-\bal{\hat{n}_{t}}}{\sum_{t=0}^{T} \ral{g^{*}_{t}}-\bal{\hat{g}_{t}}}
+\end{equation*}
+\item cumulative multipliers are parametrized by the peak of the unemployment rate in the
+simulation
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{response to positive technology shock}
+\includegraphics[scale=\sfig,page=13]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{multiplier after positive shock}
+\includegraphics[scale=\sfig,page=14]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{response to negative technology shock}
+\includegraphics[scale=\sfig,page=15]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{multiplier after negative shock}
+\includegraphics[scale=\sfig,page=16]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{countercyclical cumulative multiplier}
+\includegraphics<1>[scale=\sfig,page=17]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=18]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{conclusion}
+\end{frame}
+
+\begin{frame}
+\frametitle{summary}
+\begin{itemize}
+\item this paper proposes a New Keynesian model in which the government multiplier doubles when unemployment rises from 5\% to 8\% 
+\item mechanism behind countercyclical multiplier: 
+\begin{itemize}
+\item  multiplier $= 1 -$ crowding out
+\item crowding out of private employment by public employment is much weaker when unemployment is higher
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{applications}
+\begin{itemize}
+\item the same mechanism explains the procyclicality of the macroelasticity of unemployment with respect to unemployment insurance
+\begin{itemize}
+\item see \href{https://www.pascalmichaillat.org/5.html}{Landais, Michaillat, \& Saez [2018]}
+\end{itemize}
+\item the same mechanism applies to the product market
+\begin{itemize}
+\item see \href{https://www.pascalmichaillat.org/6.html}{Michaillat \& Saez [2019]}
+\end{itemize} 
+\item the multiplier determines optimal stimulus spending
+\begin{itemize}
+\item  see \href{https://www.pascalmichaillat.org/6.html}{Michaillat \& Saez [2019]}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\end{document}

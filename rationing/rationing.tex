@@ -1,0 +1,626 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xrationing.pdf}
+\hypersetup{pdftitle={Lecture | Do Matching Frictions Explain Unemployment? Not in Bad Times}}
+
+\begin{document}
+
+\title{Do Matching Frictions Explain Unemployment? Not in Bad Times}
+\information{Pascal Michaillat}%
+{American Economic Review, 2012}%
+{https://www.pascalmichaillat.org/1.html}
+
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{workers queue for jobs in bad times}
+\begin{figure}
+\includegraphics<1>[scale=\sfig,page=31]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=32]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=33]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{existing matching models: no queues}
+\begin{itemize}
+\item a queue is a situation where workers desperately want a job but cannot find one  
+\item in existing models, unemployment vanishes when workers desperately want a job \then queues cannot exist
+\begin{itemize}
+\item formally: unemployment vanishes when workers' job-search effort becomes infinite
+\end{itemize}
+\item problem with existing models: firms hire everybody when recruiting is costless
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper: matching model with queues}
+\begin{itemize}
+\item firms may not hire everybody when recruiting is costless
+\item based on two assumptions:
+\begin{itemize}
+\item diminishing marginal returns to labor
+\item wage rigidity
+\end{itemize}
+\item in bad times, jobs are rationed:
+\begin{itemize}
+\item unemployment would not disappear if recruiting costs vanished
+\item queues could appear
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{generic matching model}
+\end{frame}
+
+\begin{frame}
+\frametitle{matching function}
+\begin{figure}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=3]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{worker flows: job creation \& destruction}
+\begin{figure}
+\includegraphics<1>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=6]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Beveridge curve}
+\begin{itemize}
+\item the Beveridge curve relates employment $n$ to tightness $\t$ when labor market flows are balanced
+\begin{itemize}
+\item E $\to$ U = U $\to$ E
+\item $s\cdot n = f(\t)\cdot u = f(\t)\cdot \bs{1-n+s\cdot n}$
+\end{itemize}
+\item equation of the Beveridge curve:
+\begin{equation*}
+n=\frac{f(\t)}{s+(1-s)\cdot f(\t)}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{generic wage schedule}
+\begin{itemize}
+\item there are mutual gains from matching
+\item many wage schedules are consistent with equilibrium
+\item generic wage schedule: $w_t= w(n_t,\t_t,x_t)$
+\begin{itemize}
+\item $n_{t}$: level of employment in the firm
+\item $\t_{t}$: aggregate level of tightness
+\item $x_{t}$: state of the economy
+\end{itemize}
+\item $w$ nests various types of bargaining and wage rigidity
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{representative firm}
+\begin{itemize}
+\item employs $n_{t}$ workers paid $w_{t}$
+\item produces $y_{t}= g(n_{t},a_{t})$
+\begin{itemize}
+\item $g$: production function
+\item $a_{t}$: productivity (random variable)
+\end{itemize}
+\item hires $n_{t}-(1-s)\cdot n_{t-1}$ new workers
+\begin{itemize}
+\item cost per vacancy: $c\cdot  a_{t}$
+\item probability to fill a vacancy: $q(\t_{t})$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{firm problem}
+\begin{itemize}
+\item given productivity $\bc{a_t}$, tightness $\bc{\t_t}$, and the wage schedule $w$, the firm chooses employment $\bc{n_{t}}$ to maximize expected profits
+\begin{align*}\hspace*{-1cm}
+\E_0 \sum_{t=0}^{+\infty} \d^t\left[\underbrace{g(n_{t},a_{t})}_{\text{production}}\right.&-\underbrace{w(n_t,\t_t,x_t)\cdot  n_t}_{\text{wage bill}}\\
+-&\left.\underbrace{\frac{c \cdot a_{t}}{q(\t_{t})}\cdot \bp{n_{t}-(1-s)\cdot  n_{t-1}}}_{\text{recruiting expenses}}\right]
+\end{align*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{profit maximization}
+\begin{equation*}
+\pd{g(n,a)}{n}- w- n \cdot \pd{w(n,\t,x)}{n}-\bs{1-\d \cdot (1-s)}\cdot \frac{c \cdot a}{q(\t)}=0
+\end{equation*}
+\begin{itemize}
+\item the condition says that marginal profit = 0
+\item the marginal profit is the sum of 
+\begin{itemize}
+\item gross marginal profit: independent of $c$
+\item marginal recruiting expenses: dependent on $c$
+\end{itemize}
+\item (this is the steady-state expression of the condition)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{absence or presence of job rationing in several models}
+\end{frame}
+
+\begin{frame}
+\frametitle{definition of job rationing}
+\begin{itemize}
+\item jobs are rationed if the employment rate remains strictly below 1 when recruiting is costless
+\item equivalently, jobs are rationed if the employment rate remains strictly below 1 when the recruiting cost $c\to 0$ 
+\item when jobs are rationed, queues could exist
+\begin{itemize}
+\item employment is the same when job-search effort $\to \infty$ and when $c\to 0$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{four matching models}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcc}
+ model &  production function & wage setting \\
+\toprule
+Pissarides [2000]  & constant returns & Nash bargaining \\
+ & to labor &  \\
+\midrule
+Cahuc \& & diminishing marginal & Stole-Zwiebel bargaining  \\
+Wasmer [2001] & returns to labor &  \\
+\midrule
+Hall [2005]  &  constant returns & rigid wage  \\
+ &  to labor &  \\
+\midrule
+this paper & diminishing marginal & rigid wage  \\
+&  returns to labor & \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{the model of Pissarides [2000]}
+\begin{itemize}
+\item linear production function: $g(n,a)=a\cdot n$
+\item wage from Nash bargaining:
+\begin{equation*}
+w=a\cdot c\cdot \frac{ \b}{1-\b} \bs{\frac{1-\d\cdot (1-s)}{q(\t)}+ \d\cdot 
+(1-s)\cdot \t}
+\end{equation*}
+\begin{itemize}
+\item $\b\in(0,1)$: workers' bargaining power
+\item (this is the steady-state expression of the wage)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pissarides [2000]: equilibrium}
+\only<1>{\begin{itemize}
+\item steady-state equilibrium: pair $(n,\t)$ that satisfies
+\begin{itemize}
+\item Beveridge curve
+\item firm's profit-maximization condition
+\end{itemize} 
+\item equilibrium condition:
+\begin{equation*}\hspace*{-1cm}
+\underbrace{1-\beta}_{\text{gross marginal profit}}=\underbrace{c\cdot  \bs{\frac{1-\d\cdot (1-s)}{q(\t(n))}+\d\cdot (1-s)\cdot \b\cdot \t(n)}}_{\text{marginal recruiting expenses}}
+\end{equation*}
+\begin{itemize}
+\item where $\t(n)$ is implicitly defined by Beveridge curve
+\end{itemize}
+\end{itemize}}
+\only<2>{\begin{figure}
+\includegraphics[scale=\sfig,page=7]{\pdf}%
+\end{figure}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pissarides [2000]: equilibrium as $c\to 0$}
+\begin{figure}
+\includegraphics[scale=\sfig,page=8]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pissarides [2000]: no job rationing}
+\begin{figure}
+\includegraphics[scale=\sfig,page=9]{\pdf}%
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{the model of Cahuc \& Wasmer [2001]}
+\begin{itemize}
+\item concave production function: $g(n,a)=a\cdot n^{\a}$
+\begin{itemize}
+\item $\a<1$: diminishing marginal returns to labor
+\end{itemize}
+\item wage from Stole-Zwiebel bargaining:
+\begin{equation*}
+w=a\cdot \bs{ \frac{ \b\cdot\a}{1-\b\cdot (1-\a)}\cdot n^{\a-1}+c\cdot (1-s)\cdot \d \cdot \b
+\cdot \t}
+\end{equation*}
+\begin{itemize}
+\item $\b\in(0,1)$: workers' bargaining power
+\item (this is the steady-state expression of the wage)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Cahuc \& Wasmer [2001]: equilibrium}
+\only<1>{\begin{itemize}
+\item steady-state equilibrium: pair $(n,\t)$ that satisfies
+\begin{itemize}
+\item Beveridge curve
+\item firm's profit-maximization condition
+\end{itemize} 
+\item equilibrium condition:
+\begin{equation*}
+\underbrace{\frac{\a\cdot (1-\b)}{1-\b\cdot (1-\a)}\cdot  n^{\a-1}}_{\text{gross marginal profit}}=\underbrace{c\cdot \bs{\frac{1-\d (1-s)}{q(\t(n))}+\d (1-s)\cdot \b\cdot \t(n)}}_{\text{marginal recruiting expenses}}
+\end{equation*}
+\begin{itemize}
+\item where $\t(n)$ is implicitly defined by Beveridge curve
+\end{itemize}
+\end{itemize}}
+\only<2>{\begin{figure}
+\includegraphics[scale=\sfig,page=10]{\pdf}%
+\end{figure}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Cahuc \& Wasmer [2001]: no job rationing}
+\begin{figure}
+\includegraphics[scale=\sfig,page=11]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{the model of Hall [2005]}
+\begin{itemize}
+\item linear production function: $g(n,a)=a\cdot n$
+\item rigid wage: $w= \o\cdot a^{\g}$
+\begin{itemize}
+\item $\o>0$: level of the real wage
+\item $\g<1$: partially rigid real wage
+\item if $\g=0$: fixed wage
+\item specification from Blanchard \& Gali [2010]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+ \frametitle{Hall [2005]: equilibrium}
+\only<1>{\begin{itemize}
+\item steady-state equilibrium: pair $(n,\t)$ that satisfies
+\begin{itemize}
+\item Beveridge curve
+\item firm's profit-maximization condition
+\end{itemize} 
+\item equilibrium condition:
+\begin{equation*}
+\underbrace{1-\o\cdot a^{\g-1}}_{\text{gross marginal profit}}=\underbrace{c\cdot  \frac{1-\d\cdot (1-s)}{q(\t(n))}}_{\text{marginal recruiting expenses}}
+\end{equation*}
+\begin{itemize}
+\item where $\t(n)$ is implicitly defined by Beveridge curve
+\end{itemize}
+\end{itemize}}
+\only<2>{\begin{figure}
+\includegraphics[scale=\sfig,page=12]{\pdf}%
+\end{figure}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hall [2005]: no job rationing}
+\begin{figure}
+\includegraphics[scale=\sfig,page=13]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+ \frametitle{this paper's model}
+\begin{itemize}
+\item concave production function: $g(n,a)=a\cdot n^{\a}$
+\begin{itemize}
+\item $\a<1$: diminishing marginal returns to labor
+\end{itemize}
+\item rigid wage: $w= \o\cdot a^{\g}$
+\begin{itemize}
+\item $\o>0$: level of the real wage
+\item $\g<1$: partially rigid real wage
+\item if $\g=0$: fixed wage
+\item specification from Blanchard \& Gali [2010]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper's model: equilibrium}
+\only<1>{\begin{itemize}
+\item steady-state equilibrium: pair $(n,\t)$ that satisfies
+\begin{itemize}
+\item Beveridge curve
+\item firm's profit-maximization condition
+\end{itemize} 
+\item equilibrium condition:
+\begin{equation*}
+\underbrace{\a\cdot n^{\a-1}-\o\cdot a^{\g-1}}_{\text{gross marginal profit}}=\underbrace{c\cdot  \frac{1-\d\cdot (1-s)}{q(\t(n))}}_{\text{marginal recruiting expenses}}
+\end{equation*}
+\begin{itemize}
+\item where $\t(n)$ is implicitly defined by Beveridge curve
+\end{itemize}
+\end{itemize}}
+\only<2>{\begin{figure}
+\includegraphics[scale=\sfig,page=14]{\pdf}%
+\end{figure}}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper's model: equilibrium as $c\to 0$}
+\begin{figure}
+\includegraphics[scale=\sfig,page=15]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper's model: job rationing}
+\begin{figure}
+\includegraphics<1>[scale=\sfig,page=16]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=17]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{frictional \& rationing unemployment}
+\begin{figure}
+\includegraphics<1>[scale=\sfig,page=18]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=19]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{summary}
+\renewcommand{\arraystretch}{0.75}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcc}
+model  & assumptions & job rationing?\\
+\toprule
+Pissarides [2000] & bargaining  &  \ral{no}\\
+ & linear production & \\
+\midrule
+Cahuc \&  & bargaining & \ral{no} \\
+Wasmer [2001] & concave production &\\
+\midrule
+Hall [2005] & rigid wage & \ral{no}\\
+& linear production & \\
+\midrule
+this paper  & rigid wage &\gal{yes} \\
+& concave production &  \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+\heading{frictional unemployment over the business cycle: comparative statics}
+\end{frame}
+
+\begin{frame}
+\frametitle{frictional unemployment is high in booms}
+\begin{figure}
+\includegraphics[scale=\sfig,page=20]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{frictional unemployment is low in slumps}
+\begin{figure}
+\includegraphics[scale=\sfig,page=21]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{summary}
+\begin{itemize}
+\item with low productivity, gross marginal profits are low
+\begin{itemize}
+\item because of wage rigidity
+\end{itemize}
+\item[\then] labor demand is depressed
+\item[\then] total unemployment \& rationing unemployment are high
+\item but it is easy for firms to recruit workers 
+\item[\then] frictional unemployment is low
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{frictional unemployment over the business cycle: simulations}
+\end{frame}
+
+\begin{frame}
+\frametitle{calibration (weekly frequency)}
+\begin{table}
+\begin{footnotesize}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
+& interpretation & value &  source\\
+\toprule
+$\eta$ & elasticity of matching  & $0.5$ & Petrongolo \& Pissarides [2001]\\
+\al{$\g$} & \al{real wage flexibility} & \al{$0.7$} & \al{Haefke et al [2008]}\\
+$c$ & recruiting cost  & $0.22$   & Barron et al [1997]\\
+&&& Silva \& Toledo [2009] \\
+$s$ & separation rate   & $0.95\%$     & JOLTS, 2000--2009 \\
+$\mu$ & effectiveness of matching &  $0.23$  & JOLTS, 2000--2009 \\
+$\a$ & marginal returns to labor & $0.67$ & matches labor share $=0.66$ \\
+$\o$ & steady-state real wage &$0.67$& matches unemployment $=5.8\%$\\
+$\rho$ & autocorrelation of productivity &$0.992$& MSPC, 1964--2009\\
+$\o$ & standard deviation of shocks &$0.0027$&  MSPC, 1964--2009\\
+\bottomrule
+\end{tabular*}
+\end{footnotesize}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{impulse responses to negative shock}
+\begin{figure}
+\includegraphics[scale=\sfig,page=22]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{simulated \& empirical moments}
+\only<1>{\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcc}
+moment & model & US data \\
+\toprule
+elasticity of $u$ wrt $a$ & \al{$5.9$} & \al{$4.2$}\\
+elasticity of $v$ wrt $a$ & \al{$6.8$} & \al{$4.3$}\\
+elasticity of $w$ wrt $a$ & $0.7$ & $0.7$\\
+\midrule
+autocorrelation($u$)& $0.90$& $0.91$\\
+autocorrelation($v$)&$0.76$& $0.93$\\
+\midrule
+correlation($u,v$)&\al{$-0.89$} &\al{$-0.89$}\\
+\bottomrule
+\end{tabular*}
+\end{table}}
+\only<2>{\begin{itemize}
+\item the volatility of unemployment and vacancies is as large in the model as in US data
+\begin{itemize}
+\item[\then] no Shimer [2005] puzzle
+\item although wages are as flexible as in newly created US jobs
+\end{itemize}
+\item the correlation between unemployment and vacancies is the same in the model as in the data
+\begin{itemize}
+\item[\then] realistic Beveridge curve
+\end{itemize}
+\end{itemize}}
+\end{frame}
+
+\begin{frame}
+\frametitle{historical decomposition of unemployment}
+\begin{figure}
+\includegraphics<1>[scale=\sfig,page=23]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=24]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=25]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=26]{\pdf}%
+\includegraphics<5>[scale=\sfig,page=27]{\pdf}%
+\includegraphics<6>[scale=\sfig,page=28]{\pdf}%
+\includegraphics<7>[scale=\sfig,page=29]{\pdf}%
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{unemployment in model \& data}
+\begin{figure}
+\includegraphics[scale=\sfig,page=30]{\pdf}%
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\heading{conclusion}
+\end{frame}
+
+\begin{frame}
+\frametitle{summary}
+\begin{itemize}
+\item this paper develops a matching model with job rationing
+\begin{itemize}
+\item unemployment does not disappear when recruiting costs vanish
+\end{itemize}
+\item in booms: most of unemployment is frictional
+\begin{itemize}
+\item there are enough jobs
+\item but the matching process and recruiting costs create unemployment
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{summary}
+\begin{itemize}
+\item in slumps: frictional unemployment is lower and unemployment mostly comes from job rationing
+\begin{itemize}
+\item there are not enough jobs
+\item the matching process and recruiting costs create little additional unemployment
+\end{itemize}
+\item simulations: 
+\begin{itemize}
+\item as unemployment \up from $4.8\%$ to $8.3\%$
+\item rationing unemployment \up from $0\%$ to $7\%$
+\item frictional unemployment \down from $4.8\%$ to $1.3\%$ 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{implications for modeling unemployment}
+\begin{itemize}
+\item the result that frictional unemployment is low in slumps does not mean that the matching framework is inappropriate to describe slumps
+\item but it means that in slumps, the matching process and recruiting costs create little unemployment 
+\item instead, most unemployment arises from a shortage of jobs---a weak labor demand
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{implications for policy}
+\begin{itemize}
+\item in slumps: unemployment comes from job rationing 
+\item[\then] to reduce unemployment in slumps, it is necessary to stimulate labor demand
+\item[\then] policies reducing frictional unemployment have limited scope in slumps
+\begin{itemize}
+\item example \#1: creating a placement agency to improve matching
+\item example \#2: reducing unemployment insurance to stimulate job search
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{application \#1: unemployment insurance}
+\begin{itemize}
+\item the model can be combined with a Baily-Chetty model of optimal unemployment insurance (UI)
+\item this model explains the rat-race effect: higher UI alleviates the rat race for jobs and raises tightness
+\item policy implication: optimal UI is more generous in slumps than in booms
+\item see \href{https://www.pascalmichaillat.org/4.html}{Landais, Michaillat, \& Saez [2018]}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{application \#2: countercyclical multipliers}
+\begin{itemize}
+\item the labor market model can be embedded into a New Keynesian model
+\item this model explains the countercyclicality of the government multiplier
+\item the result relies not on the zero lower bound but on the nonlinearity of the labor market
+\item see \href{https://www.pascalmichaillat.org/2.html}{Michaillat [2014]}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{application \#3: unemployment fluctuations}
+ \begin{itemize}
+\item the labor market model can be combined to a product market model with a similar structure
+\item this general-equilibrium model describes how unemployment fluctuations may arise from
+\begin{itemize}
+\item aggregate demand shocks
+\item technology shocks
+\item labor supply shocks
+\end{itemize} 
+\item in the US: most unemployment fluctuations come from aggregate demand shocks
+\item see \href{https://www.pascalmichaillat.org/3.html}{Michaillat \& Saez [2015]}
+\end{itemize}
+\end{frame}
+
+\end{document}
