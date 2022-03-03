@@ -1,6 +1,6 @@
 # Papers on Business Cycles
 
-This repository contains lecture slides for papers written by Pascal Michaillat and several coauthors on the topic of business cycles. The 10 papers covered are the following:
+This repository contains lecture slides covering papers written by Pascal Michaillat and coauthors on the topic of business cycles. The lecture slides cover 10 papers:
 
 * Do Matching Frictions Explain Unemployment? Not in Bad Times [(Michaillat 2012)](https://www.pascalmichaillat.org/1.html)
 * A Theory of Countercyclical Government Multiplier [(Michaillat 2014)](https://www.pascalmichaillat.org/2.html)
