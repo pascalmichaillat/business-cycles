@@ -1,0 +1,353 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xgap.pdf}
+\hypersetup{pdftitle={Lecture | Beveridgean Unemployment Gap}}
+
+\def\W{\wh{\Wc}}
+
+\begin{document}
+
+\title{Beveridgean Unemployment Gap}
+\information{Pascal Michaillat, Emmanuel Saez}%
+{Journal of Public Economics Plus, 2021}%
+{https://www.pascalmichaillat.org/9.html}
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{Does the labor market operate efficiently?}
+\begin{itemize}
+\item we develop welfare-based measure of unemployment gap 
+\begin{itemize}
+\item[=] actual unemployment rate $-$ efficient unemployment rate
+\end{itemize}
+\item[\then] model design
+\begin{itemize}
+\item bargained wages or competitive search?
+\item rigid wages?
+\end{itemize} 
+\item[\then] distance from ``full employment''
+\item[\then] optimal macro policies
+\begin{itemize}
+\item monetary policy
+\item fiscal policy
+\item unemployment insurance
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{Theory}
+\end{frame}
+
+\begin{frame}
+\frametitle{US Beveridge curve}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Condition for labor-market efficiency}
+\includegraphics<1>[scale=\sfig,page=3]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=6]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Unemployment gap}
+\includegraphics<1>[scale=\sfig,page=7]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=8]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Beveridgean model of labor market}
+\begin{enumerate}
+\item Beveridge curve: $v(u)$
+\begin{itemize}
+\item $v$: vacancy rate
+\item $u$: unemployment rate
+\item $v(u)$: decreasing in $u$, convex
+\end{itemize}
+\item social welfare: $\W(u,v) = \Wc(n,u,v)$ with $n=1-u$
+\begin{itemize}
+\item $n$: employment rate
+\item $\Wc$: production + recruiting + preferences
+\item $\W(u,v)$: decreasing in $u$ and $v$, quasiconcave  
+\end{itemize}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}
+\frametitle{Graphical condition for efficiency}
+\begin{itemize}
+\item efficiency at tangency point: $v'(u) = MRS_{uv}$
+\item decomposing the social marginal rate of substitution:
+\only<1>{\begin{equation*}
+MRS_{uv} = -\frac{\pdx{\W}{u}}{\pdx{\W}{v}}
+\end{equation*}}%
+\only<2>{\begin{equation*}
+MRS_{uv} = -\frac{\pdx{\Wc}{u}-\pdx{\Wc}{n}}{\pdx{\Wc}{v}} 
+\end{equation*}}%
+\only<3-4>{\begin{equation*}
+MRS_{uv} = -\frac{1 - (\pdx{\Wc}{u})/(\pdx{\Wc}{n})}{-(\pdx{\Wc}{v})/(\pdx{\Wc}{n})} 
+\end{equation*}}%
+\item<4> social value of nonwork: $\z = (\pdx{\Wc}{u})/(\pdx{\Wc}{n})<1$
+\item<4> recruiting cost: $\k = - (\pdx{\Wc}{v})/(\pdx{\Wc}{n}) > 0$
+\item<4> efficiency condition:
+\begin{equation*}
+v'(u)  = - \frac{1 - \z}{\k} 
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Sufficient-statistic formula for efficiency}
+\begin{itemize}
+\item labor market tightness: $\t = v/u$	
+\item Beveridge elasticity: $\e = -\odlx{v}{u}>0$
+\item efficient labor market tightness:
+\only<1>{\begin{equation*}
+v'(u) = -\frac{1 - \z}{\k}
+\end{equation*}}%
+\only<2>{\begin{equation*}
+-\frac{v'(u)}{v/u} \cdot\frac{v}{u}  =  \frac{1 - \z}{\k}
+\end{equation*}}%
+\only<3>{\begin{equation*}
+\t  =  \frac{1 - \z}{\k \cdot \e}
+\end{equation*}}%
+\only<4-6>{\begin{equation*}
+\al{\t^*  =  \frac{1 - \z}{\k \cdot \e }}
+\end{equation*}}%
+\item<5-6> $u^*$ obtained from $\t^*$ through Beveridge curve
+\only<5>{\begin{equation*}
+\frac{u^*}{u} = \bp{\frac{\t^*}{\t}}^{-1/(1+\e)}
+\end{equation*}}%
+\only<6>{\begin{equation*}
+\al{u^* = \bp{\frac{\k \cdot \e}{1-\z}\cdot\frac{v}{u^{-\e}}}^{1/(1+\e)}}
+\end{equation*}}%
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{Application to the United States}
+\end{frame}
+
+\begin{frame}
+\frametitle{Unemployment rate (CPS)}
+\includegraphics[scale=\sfig,page=9]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Vacancy rate (Barnichon 2010 \& JOLTS)}
+\includegraphics[scale=\sfig,page=10]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Beveridge-curve branches (Bai, Perron 1998)}
+\includegraphics<1>[scale=\sfig,page=11]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=12]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=13]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=14]{\pdf}%
+\includegraphics<5>[scale=\sfig,page=15]{\pdf}%
+\includegraphics<6>[scale=\sfig,page=16]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Beveridge elasticity (Bai, Perron 1998) }
+\includegraphics[scale=\sfig,page=17]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Social value of nonwork}
+\begin{itemize}
+\item Borgschulte, Martorell (2018): natural experiment using military administrative data
+\begin{itemize}
+\item 420,000 veterans
+\item home production + recreation = $13\%$--$35\%$ earnings
+\end{itemize}
+\item Mas, Pallais (2019): field experiment in which job applicants choose wage-hour bundles
+\begin{itemize}
+\item 900 subjects
+\item home production + recreation = $58\%$ earnings
+\end{itemize}
+\item[\then] \al{$\z\in [0.03,0.49]$, with median value of $\z=0.26$}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Recruiting cost}
+\begin{itemize}
+\item 1997 National Employer Survey, administered by Census Bureau
+\begin{itemize}
+	\item 2,000 establishments
+	\item establishments have $\geq 20$ workers 
+	\item establishments belong to all industries
+\end{itemize}
+\item recruiting $= 3.2\%$ of labor costs 
+\item[\then] \al{$\k = 0.92$}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficient tightness \& tightness gap}
+\includegraphics[scale=\sfig,page=18]{\pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Efficient unemployment \& unemployment gap}
+\includegraphics[scale=\sfig,page=19]{\pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Comparison with existing ``natural rates''}
+\includegraphics[scale=\sfig,page=20]{\pdf}
+\end{frame}
+
+\begin{frame}
+\heading{Alternative calibrations of statistics}
+\end{frame}
+
+\begin{frame}
+\frametitle{Beveridge elasticity in 95\% CI}
+\includegraphics[scale=\sfig,page=21]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Inverse-optimum $\e$, so $u = u^*$}
+\includegraphics[scale=\sfig,page=24]{\pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Plausible social values of nonwork}
+\includegraphics[scale=\sfig,page=22]{\pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inverse-optimum $\z$, so $u = u^*$}
+\includegraphics[scale=\sfig,page=25]{\pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Plausible recruiting costs}
+\includegraphics[scale=\sfig,page=23]{\pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Inverse-optimum $\k$, so $u = u^*$}
+\includegraphics[scale=\sfig,page=26]{\pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Hagedorn, Manovskii (2008): $\z=0.96$}
+\includegraphics[scale=\sfig,page=27]{\pdf}
+\end{frame}
+
+\begin{frame}
+\heading{Application to Diamond-Mortensen-Pissarides model}
+\end{frame}
+
+\begin{frame}
+\frametitle{Unemployment: on DMP Beveridge curve}
+\includegraphics<1>[scale=\sfig,page=28]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=29]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Sufficient statistics in DMP model}
+\begin{itemize}
+\item Beveridge curve: UE flows $=$ EU flows
+\begin{equation*}
+v(u) = \bs{\frac{\l \cdot (1-u)}{\o \cdot u^{\h}}}^{1/(1-\h)}
+\end{equation*}
+\item[\then] Beveridge elasticity:
+\begin{equation*}
+\e = \frac{1}{1-\h}\bs{\h+ \frac{u}{1-u}}
+\end{equation*}
+\item social welfare: $\Wc(n,u,v) = p \cdot \bp{n  + z \cdot u - c \cdot v}$
+\item[\then] social value of nonwork: $\z = z$
+\item[\then] recruiting cost: $\k = c$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{DMP business cycles in Beveridge diagram}
+\includegraphics<1>[scale=\sfig,page=30]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=31]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=32]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Beveridgean efficiency $\approx$ Hosiosian efficiency}
+\includegraphics<1>[scale=\sfig,page=33]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=34]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{Conclusion}
+\end{frame}
+
+\begin{frame}
+\frametitle{Summary}
+\begin{itemize}
+\item socially efficient unemployment rate $u^*$ \& unemployment gap $u-u^*$ are determined by 3 sufficient statistics
+\begin{itemize}
+\item elasticity of Beveridge curve
+\item social cost of unemployment
+\item cost of recruiting
+\end{itemize} 
+\item in the United States, 1951--2019:
+\begin{itemize}
+\item $u^*$ averages $4.3\%$ \then $u-u^*$ averages $1.4$pp
+\item $3.0\% < u^*  < 5.4\%$ \then $u-u^*$ is countercyclical
+\item[\then] \al{labor market is inefficient}
+\item[\then] \al{labor market is inefficiently slack in slumps}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Implications for model design}
+\begin{itemize}
+\item models featuring an \al{efficient labor market} are \al{inconsistent} with our findings
+\begin{itemize}
+\item DMP model with Hosios (1990) condition
+\item models with competitive-search equilibrium (Moen 1997)
+\end{itemize}
+\item models producing a \al{countercyclical unemployment gap} are \al{consistent} with our findings
+\begin{itemize}
+\item DMP model with bargaining-power shocks (Shimer 2005)
+\item variant of the DMP model with rigid wages (Hall 2005)
+\end{itemize} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Implications for policy design }
+\begin{itemize}
+\item optimal \al{nominal interest rate} is \al{procyclical}
+\begin{itemize}
+\item optimal for monetary policy to eliminate the unemployment gap \href{https://www.pascalmichaillat.org/7.html}{(Michaillat, Saez 2021)}
+\item unemployment \up when interest rate \up (Coibion 2012)
+\end{itemize}
+\item optimal \al{government spending} is \al{countercyclical}
+\begin{itemize}
+\item optimal for government spending to reduce---but not eliminate---the unemployment gap \href{https://www.pascalmichaillat.org/6.html}{(Michaillat, Saez 2019)}
+\item unemployment \down when spending \up (Ramey 2013)
+\end{itemize}
+\end{itemize}	
+\end{frame}
+
+\begin{frame}
+\frametitle{Implications for policy design}
+\begin{itemize}
+\item optimal \al{unemployment insurance} is \al{countercyclical}
+\begin{itemize}
+\item US tightness gap is procyclical	
+\item optimal for unemployment insurance to reduce the tightness gap \href{https://www.pascalmichaillat.org/4.html}{ (Landais, Michaillat, Saez 2018)}
+\item tightness \up when unemployment insurance \up \href{https://www.pascalmichaillat.org/5.html}{ (Landais, Michaillat, Saez 2018)}
+\end{itemize}
+\end{itemize}	
+\end{frame}
+
+\end{document}

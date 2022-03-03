@@ -1,0 +1,509 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xfairness.pdf}
+\hypersetup{pdftitle={Lecture | Pricing under Fairness Concerns}}
+
+\begin{document}
+
+\title{Pricing under Fairness Concerns}
+\information{Erik Eyster, Kristof Madarasz, Pascal Michaillat}%
+{Journal of the European Economic Association, 2021}%
+{https://www.pascalmichaillat.org/8.html}
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{customers \& firms care about fair prices}
+\begin{itemize}
+\item evidence from marketing, psychology, sociology, economics
+\item but pricing models never invoke fairness
+\item[\then] pricing models do not have realistic microfoundations
+\begin{itemize}
+\item particularly problematic as these models are used for policy
+\item example: Calvo pricing \& monetary policy
+\end{itemize}
+\item exception: theory by Rotemberg [2005]
+\begin{itemize}
+\item but somewhat difficult to analyze \& port to other models
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper: tractable theory of fair pricing}
+\begin{itemize}
+\item firms set prices to maximize profits given that
+\begin{itemize}
+	\item customers care about the fairness of markups
+	\item customers systematically misperceive markups
+\end{itemize}
+\item in monopoly model:
+	\begin{itemize}
+		\item price rigidity (incomplete passthrough of costs into prices)
+	\end{itemize}
+\item in New Keynesian model:
+\begin{itemize}
+	\item short-run \& long-run nonneutrality of monetary policy 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{evidence that fairness matters}
+\end{frame}
+
+\begin{frame}
+\frametitle{firms attribute price rigidity to fairness}
+\begin{itemize}
+\item 12,000 firms in the US, Canada, Europe, Japan say that they ``tacitly agree to stabilize prices, perhaps \al{out of fairness to customers}''
+\begin{itemize}
+\item Blinder et al [1998], Fabiani et al [2005], etc.
+\end{itemize}
+\item median rank of macro theories of price rigidity:
+\begin{itemize}
+	\item nominal contracts: 3/11
+	\item menu costs: 9/11
+	\item informational frictions: 11/11
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{higher price due to higher markup is unfair}
+\begin{itemize}
+\item Kahneman, Knetsch, Thaler [1986]: ``A hardware store has been selling snow shovels for \$15. The morning after a large snowstorm, the store raises the price to \$20.''
+\begin{itemize}
+\item acceptable: 18\% 
+\item \al{unfair: 82\%}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{but higher price with same markup is fair} 
+\begin{itemize}
+\item Kahneman, Knetsch, Thaler [1986]: ``Due to a transportation mixup, the wholesale price of lettuce has increased. A grocer has bought lettuce at a price that is 30 cents per head higher than normal. The grocer raises the price of lettuce to customers by 30 cents per head.''
+\begin{itemize}
+\item \al{acceptable: 79\%}
+\item unfair: 21\%
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{firms understand norms of fairness}
+\begin{itemize}
+\item Blinder et al [1998] surveyed 300 firms in the US
+\item  64\% of firms: ``customers do not tolerate price increases after increases in demand'' 
+\item 71\% of firms: ``customers do tolerate price increases after increases in cost''
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{even God cares about markups}
+\begin{itemize}
+\item Talmudic law: maximum markup allowable in trade = 20\%
+\item legal texts also regulate markups:
+\begin{itemize}
+	\item price of bread in France, 1700 -- 1970
+	\item public utilities in the US
+	\item anti-price-gouging legislation in most US states
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{money illusion suggests misinference}
+\begin{itemize}
+\item Shafir, Diamond, Tversky [1997]: ``Imagine that within a six-month period all salaries and all prices went up by 25\%. You now earn and spend 25\% more than before. Six months ago, you were planning to buy a leather armchair whose price during the 6-month period went up from \$400 to \$500. Would you be more or less likely to buy the armchair now?''
+\begin{itemize}
+\item as or more likely: 62\%
+\item \al{less likely: 38\%}
+\end{itemize}
+\end{itemize} 
+\end{frame}
+
+\begin{frame}
+\heading{monopoly model\\with fairness concerns}
+\end{frame}
+
+\begin{frame}
+\frametitle{customers}
+\begin{itemize}
+\item given price of consumption $P$, wealth $W$, and \al{fairness function $F$}
+\item choose money balances $B$ and consumption $Y$	
+\item to maximize quasilinear utility
+\begin{equation*}
+\frac{\e}{\e-1}  \bp{\al{F} \cdot Y}^{(\e-1)/\e}+B
+\end{equation*}
+\item subject to budget constraint $B + P \cdot Y = W$
+\item different from social-preference approach to fairness
+\begin{itemize}
+	\item Rabin [1993] \then Rotemberg [2005]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{fairness function $F$}
+\begin{itemize}
+\item argument: perceived markup $M^p = P/C^{p}$
+\begin{itemize}
+\item $P$: observed price
+\item $C^{p}$: perception of hidden marginal cost
+\end{itemize}
+\item positive: $F(M^p)>0$
+\item decreasing: $F'(M^p)<0$
+\begin{itemize}
+\item higher markups are less fair
+\end{itemize}
+\item linear or concave: $F''(M^p) \leq 0$ 
+\begin{itemize}
+\item stronger response to increases in price than decreases
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{examples of fairness function}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{perceived marginal cost}
+\begin{equation*}
+C^{p}(P)= (C^b)^{\g} \cdot \bs{\frac{P}{\e/(\e-1)}}^{1-\g}
+\end{equation*}
+\begin{itemize}
+\item $C^b$: prior belief about monopoly's marginal cost
+\item $P/[\e/(\e-1)]$: marginal cost with rational customers
+\item $\g\in (0,1]$: amount of misinference
+\begin{itemize}
+\item $\g = 0$: rational inference
+\item $0 < \g < 1$: some inference, but less than rational
+\item $\g = 1$: no inference
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{perceived markup}
+\begin{equation*}
+M^p(P) = \frac{P}{C^{p}(P)} = \bp{\frac{\e}{\e-1}}^{1-\g}  \bp{\frac{P}{C^b}}^{\g}
+\end{equation*}
+\begin{itemize}
+\item misinference ($\g>0$): \al{$M^p$ increasing in $P$}
+\begin{itemize}
+\item when a price rises due to a cost increase, customers partially misattribute the higher price to a higher markup
+\end{itemize}
+\item rational inference ($\g = 0$): constant $M^p$
+\begin{itemize}
+\item when a price rises due to a cost increase, customers realize that the profit-maximizing markup is constant
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{demand curve}
+\begin{equation*}
+Y^{d}(P)= P^{-\e}  \cdot  \al{F(M^p(P))^{\e-1}}
+\end{equation*}
+\begin{itemize}
+\item $P^{-\e}$: traditional effect of price on demand
+\begin{itemize}
+ \item price \then customers' budget sets \then demand
+ \end{itemize}
+\item \al{$F(M^p(P))^{\e-1}$: effect of price on demand through fairness}
+\begin{itemize}
+\item price \then perceived markup \then perceived fairness \then marginal utility of consumption \then demand
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{monopoly}
+\begin{itemize}
+\item given marginal cost of production $C$
+\begin{itemize}
+	\item unobservable to customers
+\end{itemize}
+\item chooses output $Y$ and price $P$
+\item to maximize profits $Y \cdot (P-C)$
+\item subject to customers' demand $Y = Y^d(P)$
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{profit-maximizing price}
+\begin{itemize}    
+\item profit-maximizing price: 
+\begin{equation*}
+P = M \cdot C
+\end{equation*}
+\item $M$: profit-maximizing markup
+\begin{equation*}
+M=\frac{E}{E-1}
+\end{equation*}
+\item $E$: (positive) elasticity of demand wrt price
+\begin{equation*}
+E = - \frac{P}{Y^d} \cdot \od{Y^{d}}{P} 
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{price elasticity of demand}
+\begin{itemize}
+\item $Y^d(P) = P^{-\e}  \cdot F(M^p(P))^{\e-1}$
+\item price elasticity of perceived markup $=\g$
+\item $\f(M^p) = $ (positive) elasticity of fairness function wrt markup
+\item then we obtain:
+\begin{equation*}
+E(P) = \e+ \al{(\e-1)  \cdot  \g \cdot \f(M^p(P))}
+\end{equation*}
+\item fairness operates through term $\al{(\e-1)  \cdot  \g \cdot \f(M^p(P))}$ in price elasticity of demand
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{elasticity of fairness function wrt markup}
+\begin{equation*}
+\f(M^p) = - \frac{M^p}{F(M^p)}\cdot \od{F}{M^p}
+\end{equation*}
+\begin{itemize}
+\item $\f>0$
+\begin{itemize}
+\item because $F>0$
+\item and $F'<0$
+\end{itemize}
+\item \al{$\f$ increasing in $M^p$}
+\begin{itemize}
+\item because $F$ is decreasing in $M^p$
+\item and $-F'$ is weakly increasing in $M^p$ (concavity of $F$)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{no fairness concerns \then flexible prices}
+\begin{equation*}
+E(P) = \e+ (\e-1) \cdot  \g \cdot \al{\underset{=\;0}{\f(M^p(P))}}
+\end{equation*}
+\begin{itemize}
+\item standard price elasticity of demand: $E=\e$
+\item standard markup: $M=\e/(\e-1)$
+\item passthrough of marginal costs into prices $= 100\%$
+\begin{itemize}
+\item because markup is constant
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{rational inference \then flexible prices}
+\begin{equation*}
+E(P) = \e+ (\e-1)\cdot \al{\underset{=\;0}{\g}}\cdot \f(M^p(P))
+\end{equation*}
+\begin{itemize}
+\item standard price elasticity of demand: $E=\e$
+\item standard markup: $M=\e/(\e-1)$
+\item marginal-cost passthrough $= 100\%$
+\begin{itemize}
+\item because markup is constant
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{fairness \& misinference \then more competition}
+\begin{equation*}
+E(P) = \e+ (\e-1)\cdot \al{\underset{>0}{\g}} \cdot \al{\underset{>0}{\f(M^p(P))}}
+\end{equation*}
+\begin{itemize}
+\item price elasticity of demand is higher: $E>\e$
+\item markup is lower:
+\begin{equation*}
+M = \frac{E}{E-1} < \frac{\e}{\e-1}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{fairness \& misinference \then price rigidity}
+\begin{itemize}
+\item equilibrium markup is a fixed point:
+\begin{equation*}
+M = \frac{E(M \cdot C)}{E(M \cdot C)-1}
+\end{equation*}
+\item  equilibrium markup satisfies
+\begin{equation*}
+M=1+\frac{1}{\e-1}\cdot \frac{1}{1+\al{\g \cdot\f(M^p(M \cdot C))}}
+\end{equation*}
+\item[\then] marginal-cost passthrough $< 100\%$
+\begin{itemize}
+\item because markup \down when marginal cost \up
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{evidence of incomplete passthrough}
+\begin{itemize}
+\item labor-cost shocks in Sweden: passthrough = 30\%
+\begin{itemize}
+	\item Carlsson, Skans [2012]
+\end{itemize}
+\item reduction in import tariff in India: passthrough = 30\%--40\%
+\begin{itemize}
+	\item De Loecker et al [2016]
+\end{itemize}
+\item marginal-cost shocks in Mexico: passthrough = 20\%--40\%
+\begin{itemize}
+	\item Caselli, Chatterjee, Woodland [2017] 
+\end{itemize}
+\item energy-price shocks in the US: passthrough = 50\%--70\%
+\begin{itemize}
+	\item Ganapati, Shapiro, Walker [2020] 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\heading{new keynesian model\\with fairness concerns}
+\end{frame}
+
+\begin{frame}
+\frametitle{fairness concerns}
+\begin{itemize}
+\item fairness-adjusted consumption of good $i$ by household $j$: 
+\begin{equation*}
+Z_{ij}= \al{F_{i}(M^p_{i}(P_{i}))} \cdot Y_{ij}
+\end{equation*}
+\item fairness-adjusted consumption by household $j$ is aggregated:
+\begin{equation*}
+Z_{j} = \bs{\int_{0}^{1} Z_{ij}^{(\e-1)/\e}di}^{\e/(\e-1)}
+\end{equation*}
+\item consumption index $Z_j$ enters utility
+\begin{equation*}
+\E[0]{\sum \d^{t}  \bs{\ln{Z_{j}}-\frac{N_{j}(t)^{1+\eta}}{1+\eta}}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{misinference}
+\begin{itemize}
+\item endogenize parameter $C^b$ using past belief
+\item perceived marginal cost of good $i$ in period $t$:
+\begin{equation*}
+C^{p}_{i}(t)= \bs{\al{C^{p}_{i}(t-1)}}^{\g} \cdot \bs{\frac{P_{i}(t)}{\e/(\e-1)}}^{1-\g}
+\end{equation*}
+\item $\g\in(0,1]$: misinference
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Short-run monetary nonneutrality}
+\begin{itemize}
+\item 3 equilibrium variables: $\wh{m^p}(t)$, $\wh{n}(t)$, and $\wh{\pi}(t)$
+\item belief dynamics: $\wh{m^p}(t) = \g \cdot \bs{\wh{\pi}(t) + \wh{m^p}(t-1)}$
+\item IS equation:
+\begin{equation*}
+\a \wh{n}(t) +\psi \wh{\pi}(t)= \a \E[t]{\wh{n}(t+1)}+\E[t]{\wh{\pi}(t+1)} - s(t)
+\end{equation*}    	
+\item short-run Phillips curve
+\begin{equation*}
+(1-\d\g) \wh{m^p}(t) -\l_1 \wh{n}(t) = \d\g \E[t]{\wh{\pi}(t+1)} -\l_2 \E[t]{\wh{n}(t+1)}
+\end{equation*}
+\item nonneutrality arises from Phillips curve
+\item evidence: Christiano, Eichenbaum, Evans [1999]; Ramey [2016]
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{hybrid short-run phillips curve}
+\begin{itemize}
+\item Phillips curve is forward-looking + \al{backward-looking}
+\begin{equation*}
+(1-\d\g) \al{\sum_{s=0}^{+\infty}\g^{s+1} \wh{\pi}(t-s)} -\l_1 \wh{n}(t)  = \d\g \E[t]{\wh{\pi}(t+1)} -\l_2 \E[t]{\wh{n}(t+1)}
+\end{equation*}
+\item hybrid short-run Phillips curve is more realistic
+\begin{itemize}
+	\item inflation dynamics are more persistent
+\end{itemize}
+\item evidence: Mavroeidis, Plagborg-Moller, Stock [2014]
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{calibration from passthrough evidence}
+\includegraphics[scale=\sfig,page=3]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Loosening of monetary policy}
+\includegraphics<1>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=6]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=7]{\pdf}%
+\includegraphics<5>[scale=\sfig,page=8]{\pdf}%
+\includegraphics<6>[scale=\sfig,page=9]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{explanation for anger at inflation}
+\begin{itemize}
+\item Shiller [1997] surveyed 120 people in the US
+\item 85\% said that ``when they go to the store and see that prices are higher, they sometimes \al{feel a little angry} at someone''
+\item someone:  ``\al{greedy} store owners and businesses''
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{explanation for opinions about price movements in japan (BOJ survey, 2001--2017)}
+\begin{table}
+\begin{small}\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lccc}
+perceived price change	& favorable & neutral & unfavorable \\ 
+\toprule 
+prices have gone up & 2.5\% & 13.0\% & \al{83.7\%} \\ 
+($N=68,491$)	&	& & \\ 
+prices have gone down & \al{43.0\%}	& 34.2\% & 21.9\% \\ 
+($N=18,257$)	& & & \\ 
+\bottomrule\end{tabular*}\end{small}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Improvement in technology}
+\includegraphics<1>[scale=\sfig,page=10]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=11]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=12]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=13]{\pdf}%
+\includegraphics<5>[scale=\sfig,page=14]{\pdf}%
+\includegraphics<6>[scale=\sfig,page=15]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Long-run monetary nonneutrality}
+\begin{itemize}
+\item steady-state perceived markup:
+\begin{equation*}
+\ln{\ol{M^p}} = \ln{\frac{\e}{\e-1}} + \al{\frac{\g}{1-\g}} \cdot \ol{\pi}
+\end{equation*}
+\item higher inflation \then higher perceived markup \then lower fairness \then lower actual markup \then higher output
+\item evidence of long-run nonneutrality: King, Watson [1994, 1997]
+\item evidence on inflation \& markups: Benabou [1992]; Banerjee, Russell [2005]
+\item nonneutrality modulated by acclimation to inflation: $\c\in[0,1]$
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{long-run Phillips curve}
+\includegraphics<1>[scale=\sfig,page=16]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=17]{\pdf}%
+\end{frame}
+
+\end{document}
