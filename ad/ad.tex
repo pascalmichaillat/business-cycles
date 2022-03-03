@@ -1,0 +1,588 @@
+\documentclass[12pt,xcolor={dvipsnames},hyperref={pdftex,pdfpagemode=UseNone,hidelinks,pdfdisplaydoctitle=true},usepdftitle=false]{beamer}
+\usepackage{presentation,math}
+\def\pdf{xad.pdf}
+\hypersetup{pdftitle={Lecture | Aggregate Demand, Idle Time, and Unemployment}}
+
+\begin{document}
+
+\title{Aggregate Demand, Idle Time, and Unemployment}
+\information{Pascal Michaillat, Emmanuel Saez}%
+{Quarterly Journal of Economics, 2015}%
+{https://www.pascalmichaillat.org/3.html}
+\frame[plain]{\titlepage}
+
+\begin{frame}
+\frametitle{unemployment fluctuations remain insufficiently understood}
+\includegraphics<1>[scale=\sfig,page=1]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=2]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=3]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{modern models}
+\begin{itemize}
+\item matching model of the labor market
+\begin{itemize}
+\item tractable
+\item but no aggregate demand
+\end{itemize}
+\item New Keynesian model with matching frictions on the labor market
+\begin{itemize}
+\item many shocks, including aggregate demand
+\item but complex
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{general-disequilibrium model}
+\begin{itemize}
+\item vast literature after Barro \& Grossman [1971]
+\begin{itemize}
+\item revival after the Great Recession
+\end{itemize}
+\item captures effect of aggregate demand on unemployment
+\item but supply-side factors are irrelevant in demand-determined regimes
+\item and difficult to analyze because of multiple regimes
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{this paper's model}
+\begin{itemize}
+\item Barro-Grossman architecture
+\item matching structure on product market \& labor market
+\begin{itemize}
+	\item instead of disequilibrium structure
+	\item markets can be too slack or too tight but remain in equilibrium
+\end{itemize}
+\item aggregate demand affects unemployment
+\begin{itemize}
+\item as do labor productivity, mismatch, job search, and labor-force participation
+\end{itemize}
+\item simple: graphical representation of equilibrium
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{basic model: product market}
+\end{frame}
+
+\begin{frame}
+\frametitle{structure}
+\begin{itemize}
+\item static model
+\item measure 1 of identical households
+\item households produce and consume services
+\begin{itemize}
+\item no firms: services produced within households
+\item households cannot consume their own services
+\end{itemize}
+\item services are traded on matching market
+\item households visit other households to buy services
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{matching function \& tightness}
+\includegraphics<1>[scale=\sfig,page=4]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=5]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=6]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{low product market tightness}
+\includegraphics<1>[scale=\sfig,page=32]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{high product market tightness}
+\includegraphics<1>[scale=\sfig,page=33]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{evidence of unsold capacity}
+\includegraphics[scale=\sfig,page=7]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{matching cost: $\rho\in(0,1)$ service per visit}
+\begin{itemize}
+\item consumption $\equiv$ output net of matching services
+\begin{itemize}
+	\item consumption, not output, yields utility
+\end{itemize}
+\item key relationship: output = $\bs{1+\tau(x)}\cdot$ consumption
+\item matching wedge $\tau(x)$ summarizes matching costs:
+\end{itemize}
+\begin{align*}
+&\underbrace{y}_{\text{output}} = \underbrace{c}_{\text{consumption}}+ \underbrace{\rho\cdot v}_{\text{matching services}}=  c + \rho\cdot \frac{y}{q(x)}\\
+&\Rightarrow y =\bs{1+\frac{\rho}{q(\underset{-}{x})-\rho}} \cdot  c\equiv \bs{1+\tau(\underset{+}{x})} \cdot  c
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{evidence of matching costs}
+\includegraphics[scale=\sfig1,page=8]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{consumption $<$ output $<$ capacity}
+\begin{itemize}
+\item output $y$ $<$ capacity $k$ because the matching function prevents all services from being sold
+\begin{itemize}
+\item selling probability $f(x)<1$
+\end{itemize}
+\item consumption $c$ $<$ output $y$ because some services are devoted to matching so cannot provide utility
+\begin{itemize}
+\item matching wedge $\tau(x)>0$
+\end{itemize}
+\item consumption is directly relevant for welfare
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{aggregate supply}
+\begin{itemize}
+\item aggregate supply $\equiv$ number of services consumed at tightness $x$, given the supply of services $k$ and matching process
+\begin{equation*}
+c^s(x) = \frac{f(x)}{1+\tau(x)}\cdot k = \bs{f(x)-\r \cdot x}\cdot k
+\end{equation*}
+\item could represent aggregate supply in terms of output instead of consumption,  but consumption is linked to welfare 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{tightness \& aggregate supply}
+\includegraphics<1>[scale=\sfig,page=9]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=10]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=11]{\pdf}%
+\includegraphics<4>[scale=\sfig,page=12]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{money}
+\begin{itemize}
+\item money is in fixed supply $\mu$
+\item households hold $m$ units of money	
+\item the price of services in terms of money is $p$
+\item real money balances enter the utility function
+\begin{itemize}
+\item Barro \& Grossman [1971]
+\item Blanchard \& Kiyotaki [1987]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{households}
+\begin{itemize}
+\item take price $p$ and tightness $x$ as given
+\item choose $c,\;m$ to maximize utility
+\begin{equation*}
+\underbrace{\frac{\c}{1+\c}\cdot c^{\frac{\e-1}{\e}}}_{\text{services}}+\underbrace{\frac{1}{1+\c}\cdot \bp{\frac{m}{p}}^{\frac{\e-1}{\e}}}_{\text{real money balances}}
+ \end{equation*}
+\item subject to budget constraint
+\begin{equation*}
+\underbrace{m}_{\text{money}}+\underbrace{p\cdot\al{\bp{1+\tau(x)}} \cdot  c}_{\text{expenditure on services}}= \underbrace{\mu}_{\text{endowment}}+\underbrace{ \al{f(x)} \cdot p\cdot  k}_{\text{labor income}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{aggregate demand}
+\begin{itemize}
+\item optimal consumption decision:
+\begin{equation*}
+\underbrace{\al{\bp{1+\tau(x)}}}_{\text{relative price}} \cdot \underbrace{\frac{1}{1+\c}\cdot \bp{\frac{m}{p}}^{-\frac{1}{\e}}}_{\text{MU of real money}} =\underbrace{\frac{\c}{1+\c}\cdot c^{-\frac{1}{\e}}}_{\text{MU of services}}
+\end{equation*}
+\item money market clears: $m=\mu$
+\item aggregate demand gives desired consumption of services given price $p$ and tightness $x$:
+\begin{equation*}
+c^{d}(x,p)=\bp{\frac{\c}{1+\tau(x)}}^\e\cdot \frac{\mu}{p}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{linking aggregate demand \& visits}
+\begin{itemize}
+\item there is a direct link between consumption of services, purchase of services, and visits 
+\item if the desired consumption is $c^d(x,p)$
+\item the desired number of purchases is 
+\begin{equation*}
+(1+\tau(x))\cdot c^{d}(x,p)
+\end{equation*}
+\item  and the required number of visits is 
+\begin{equation*}
+v = \frac{(1+\tau(x))\cdot c^{d}(x,p)}{q(x)}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{tightness \& aggregate demand}
+\includegraphics[scale=\sfig,page=13]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{equilibrium}
+\begin{itemize}
+\item price $p$ + tightness $x$ equilibrate supply and demand: 
+\begin{equation*}
+c^{s}(x) = c^{d}(x,p)
+\end{equation*}
+\item the matching equilibrium is richer than the Walrasian equilibrium---where only price equilibrates supply and demand
+\begin{itemize}
+\item can describe ``Walrasian situations'' where price responds to shocks and tightness is constant
+\item but can also describe ``Keynesian situations'' where price is constant and tightness responds to shocks
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{price mechanism}
+\begin{itemize}
+\item we need a price mechanism to completely describe the equilibrium 
+\item here we consider two polar cases:
+\begin{itemize}
+\item fixed price [Barro \& Grossman 1971]
+\item competitive price [Moen 1997]
+\end{itemize}
+\item in the paper we also consider:
+\begin{itemize}
+	\item bargaining (typical in the matching literature)
+	\item partially rigid price [Blanchard \& Gali 2010]
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\heading{comparative statics}
+\end{frame}
+
+\begin{frame}
+\frametitle{increase in AD with fixed price ($\c$ \up)}
+\includegraphics<1>[scale=\sfig,page=14]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=15]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{increase in AS with fixed price ($k$ \up)}
+\includegraphics<1>[scale=\sfig,page=16]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{comparative statics with fixed price}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcc}
+ & output &  tightness   \\
+increase in: & $y$ &  $x$  \\
+\toprule
+\gal{aggregate demand $\c$} &  \gal{+} &  \gal{+}    \\
+\ral{aggregate supply $k$} &  \ral{+} &  \ral{\textminus}  \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{efficient equilibrium: maximum consumption}
+\includegraphics[scale=\sfig,page=17]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{slack equilibrium: consumption is too low}
+\includegraphics[scale=\sfig,page=18]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{tight equilibrium: consumption is too low}
+\includegraphics[scale=\sfig,page=19]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{comparative statics with competitive price}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcc}
+& output &  tightness  \\
+increase in: & $y$ &  $x$ \\
+\toprule
+aggregate demand $\c$& 0  &  \bal{0}   \\
+aggregate supply $k$&  +  &  \bal{0}   \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\heading{complete model: product market \& labor market}
+\end{frame}
+
+\begin{frame}
+\frametitle{labor market \& unemployment}
+\includegraphics[scale=\sfig,page=20]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{firms}
+\begin{itemize}
+\item workers are hired on matching labor market
+\item production is sold on matching product market
+\item firms employ producers and recruiters
+\begin{itemize}
+	\item number of recruiters $=\hat{\tau}(\t)$ \texttimes\; producers
+	\item number of employees $=\bs{1+\hat{\tau}(\t)}$ \texttimes\; producers
+\end{itemize}
+\item take real wage $w$ and tightnesses $x$ and $\t$ as given
+\item choose number of producers $n$ to maximize profits
+\end{itemize}
+\begin{equation*}
+\underbrace{\al{f(x)}}_{\text{selling probability}}\cdot  \underbrace{a\cdot n^{\a}}_{\text{production}} - \underbrace{\al{\bs{1+\hat{\tau}(\t)}}\cdot w\cdot n}_{\text{wage of producers + recruiters}}
+\end{equation*}
+\end{frame}
+
+\begin{frame}
+\frametitle{labor demand}
+\begin{itemize}
+\item optimal employment decision:
+\begin{equation*}
+\underbrace{\al{f(x)}}_{\text{selling probability}}\cdot \underbrace{\a\cdot a\cdot  n^{\a-1}}_{\text{MPL}}=(1+\underbrace{\al{\hat{\tau}(\t)}}_{\text{matching wedge}})\cdot \underbrace{w}_{\text{real wage}}
+\end{equation*}
+\item same as Walrasian first-order condition, except for selling probability $<1$ and matching wedge $>0$ 
+\item labor demand gives the desired number of producers:
+\begin{equation*}
+n^{d}(\t,x,w) = \bs{\frac{f(x)\cdot a\cdot \a}{\bp{1+\hat{\tau}(\t)}\cdot w}}^{\frac{1}{1-\a}}
+\end{equation*}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{partial equilibrium on labor market}
+\includegraphics[scale=\sfig,page=21]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{general equilibrium}
+\begin{itemize}
+\item prices $(p, w)$ and tightnesses $(x,\t)$ equilibrate supply and demand on product and labor markets:
+\begin{align*}
+\left\{\begin{array}{ccc}c^{s}(x,\t) & = & c^{d}(x,p) \\
+n^{s}(\t) & = & n^{d}(\t,x,w)\end{array}\right.
+\end{align*}
+\item need to specify price and wage mechanisms
+\begin{itemize}
+\item fixed price and fixed wage
+\item competitive price and competitive wage
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{effect of AD with fixed prices}
+\includegraphics<1>[scale=\sfig,page=29]{\pdf}%
+\includegraphics<2>[scale=\sfig,page=30]{\pdf}%
+\includegraphics<3>[scale=\sfig,page=31]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Keynesian, classical, \& frictional unemployment}
+\begin{itemize}
+\item equilibrium unemployment rate:
+\begin{equation*}
+u =1-\frac{1}{h}\cdot\bp{\frac{f(x)\cdot a\cdot \a}{w}}^{\frac{1}{1-\a}}\cdot \bp{\frac{1}{1+\hat{\tau}(\t)}}^{\frac{\a}{1-\a}}
+\end{equation*}
+\item if $f(x)= 1$, $w = a\a h^{\a-1}$, and $\hat{\tau}(\t) = 0$, then $u =0$
+\item the factors of unemployment therefore are
+\begin{itemize}
+\item Keynesian factor: $f(x)<1$
+\item classical factor: $w>a\cdot \a \cdot h^{\a-1}$
+\item frictional factor: $\hat{\tau}(\t)>0$
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{comparative statics with fixed prices}
+\only<2>{
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcccc}
+& & product  &  & labor \\
+& output & tightness & employment  & tightness \\
+increase in: & $y$  & $x$  & $l$ & $\t$ \\
+\toprule
+\gal{aggregate demand $\c$}&	 \gal{+}&\gal{+} & + & +   \\
+\ral{technology $a$}& \ral{+} &\ral{\textminus} &+ & + \\
+labor supply $k$& +  &	\textminus& + &	\textminus \\
+\bottomrule
+\end{tabular*}
+\end{table}}
+\only<1>{
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcccc}
+& & product  &  & labor \\
+& output & tightness & employment  & tightness \\
+increase in: & $y$  & $x$  & $l$ & $\t$ \\
+\toprule
+\gal{aggregate demand $\c$}&	+& +   & \gal{+} & \gal{+} \\
+ \gal{technology $a$}& + &\textminus  &	\gal{+ }& \gal{+} \\
+\ral{labor supply $h$}& +  &\textminus& \ral{+} &	\ral{\textminus} \\
+\bottomrule
+\end{tabular*}
+\end{table}}
+\end{frame}
+
+\begin{frame}
+\frametitle{comparative statics with competitive prices}
+\begin{table}
+\begin{tabular*}{\textwidth}{@{\extracolsep\fill}lcccc}
+& & product  &  & labor \\
+& output & tightness & employment  & tightness \\
+increase in: & $y$  & $x$  & $l$ & $\t$ \\
+\toprule
+aggregate demand $\c$&	 0 &	 \bal{0}   & 0  & \bal{0} \\
+technology $a$& + &	\bal{0}  & 0 &	\bal{0} \\
+labor supply $k$& +  &	\bal{0}  & + &	\bal{0}  \\
+\bottomrule
+\end{tabular*}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\heading{rigid or flexible prices?}
+\end{frame}
+
+\begin{frame}
+\frametitle{$x$ constructed from capacity utilization in SPC}
+\includegraphics[scale=\sfig,page=22]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{fluctuations in $x$ \so rigid price}
+\includegraphics[scale=\sfig,page=23]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{fluctuations in $\t$ \so rigid real wage}
+\includegraphics[scale=\sfig,page=24]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{labor demand\\or labor supply shocks?}
+\end{frame}
+
+\begin{frame}
+\frametitle{labor demand \& labor supply shocks}
+\begin{itemize}
+\item source of labor demand shocks:
+\begin{itemize}
+\item aggregate demand $\c$
+\item technology $a$
+\end{itemize}
+\item source of labor supply shocks:
+\begin{itemize}
+\item labor-force participation $h$
+\item $h$ can also be interpreted as job-search effort
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{predicted effects of shocks}
+\begin{itemize}
+\item labor supply shocks: 
+\begin{itemize}
+\item \al{negative} correlation between employment ($l$) and labor market tightness ($\t$)
+\end{itemize}
+\item labor demand shocks:
+\begin{itemize}
+\item \al{positive} correlation between employment ($l$) and labor market tightness ($\t$)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{$\corr(l,\t)>0$ \so labor demand}
+\includegraphics[scale=\sfig,page=25]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\frametitle{cross-correlogram: $\t$ (leading) \& $l$}
+\includegraphics[scale=\sfig,page=26]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{aggregate demand\\or technology shocks?}
+\end{frame}
+
+\begin{frame}
+\frametitle{predicted effects of shocks}
+\begin{itemize}
+\item aggregate demand shocks:
+\begin{itemize}
+\item \al{positive} correlation between output ($y$) and product market tightness ($x$)
+\end{itemize}
+\item technology shocks:
+\begin{itemize}
+\item \al{negative} correlation between output ($y$) and product market tightness ($x$)
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{$\corr(y,x)>0$ \so AD}
+\includegraphics[scale=\sfig,page=27]{\pdf}%
+\end{frame}
+
+
+\begin{frame}
+\frametitle{cross-correlogram: $x$ (leading) \& $y$}
+\includegraphics[scale=\sfig,page=28]{\pdf}%
+\end{frame}
+
+\begin{frame}
+\heading{conclusion}
+\end{frame}
+
+\begin{frame}
+\frametitle{summary}
+\begin{itemize}
+\item we develop a tractable, general-equilibrium model of unemployment fluctuations
+\item we construct empirical series for
+\begin{itemize}
+\item product market tightness
+\item labor market tightness
+\end{itemize}
+\item we find that unemployment fluctuations stem from
+\begin{itemize}
+\item price rigidity and real-wage rigidity
+\item aggregate demand shocks
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{applications of the model to policy}
+\begin{itemize}
+\item optimal unemployment insurance
+\begin{itemize}
+\item \href{https://www.pascalmichaillat.org/4.html}{Landais, Michaillat, \& Saez [2018]}
+\end{itemize}
+\item optimal public expenditure
+\begin{itemize}
+\item \href{https://www.pascalmichaillat.org/6.html}{Michaillat \& Saez [2019]}
+\end{itemize}
+\item optimal monetary policy
+\begin{itemize}
+\item \href{https://www.pascalmichaillat.org/7.html}{Michaillat \& Saez [2021]}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\end{document}

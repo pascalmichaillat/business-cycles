@@ -1,0 +1,115 @@
+% ---------- Fonts ----------
+
+\usefonttheme{professionalfonts}
+\usepackage{sourcesanspro}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,eucal,bbold,bm}
+\usepackage[italic,eulergreek]{mathastext}
+
+% ---------- Theme ----------
+
+\usetheme{Boadilla}
+\setbeamercovered{transparent}
+\usecolortheme[]{seagull}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+% ---------- Spacing ----------
+
+\usepackage{setspace} 
+\setstretch{1.4} 
+
+\setbeamertemplate{title page}[default][left,leftskip=-9pt]
+\setbeamertemplate{frametitle}[default][left,leftskip=3pt]
+\addtobeamertemplate{frametitle}{\vspace*{-4mm}}{}
+
+% ---------- General typography ----------
+
+\usepackage{textcomp}
+\usepackage[overload]{textcase}
+
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+\MTsetmathskips{f}{\thinmuskip}{0mu} % Spacing around f in math
+\MTsetmathskips{y}{\thinmuskip}{0mu} % Spacing around y in math
+\MTsetmathskips{p}{\thinmuskip}{0mu} % Spacing around p in math
+\MTsetmathskips{l}{0mu}{\thinmuskip} % Spacing around l in math
+
+\usepackage{url}
+\urlstyle{same}
+
+\colorlet{myblack}{black!85!}
+\colorlet{mygray}{gray!50!}
+
+\setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{\textendash} 
+\setbeamertemplate{enumerate item}[default]
+
+\setbeamercolor{normal text}{fg=myblack}
+\setbeamercolor{itemize item}{fg=mygray}
+\setbeamercolor{itemize subitem}{fg=mygray} 
+\setbeamercolor{enumerate item}{fg=mygray} 
+\setbeamercolor{enumerate subitem}{fg=mygray}
+
+% ---------- Title page ----------
+
+\setbeamercolor{title}{fg=myblack}
+\setbeamercolor{date}{fg=mygray}
+
+\setbeamerfont{title}{size=\LARGE, series=\scshape}
+\setbeamerfont{author}{size=\large}
+
+\let\oldtitle\title
+\renewcommand{\title}[1]{\oldtitle[]{\MakeLowercase{#1}\vspace{-7mm}\\\color{myblack}{\rule{\textwidth}{2pt}}\vspace{5mm}}}
+
+\newcommand{\information}[3]{\author[]{#1\vspace{0.5cm}\\#2\vspace{0.5cm}\\\color{mygray}{\small Paper available at \url{#3}}\vspace*{-2cm}}\date[]{}}
+
+% ---------- Headings ----------
+
+\setbeamercolor{frametitle}{fg=myblack}
+\setbeamerfont{frametitle}{series=\scshape}
+
+\newcommand{\heading}[1]{\LARGE\scshape\color{myblack}\MakeLowercase{#1}\vspace{-7mm}\\\color{mygray}{\rule{\textwidth}{2pt}}}
+
+\let\oldframetitle\frametitle
+\renewcommand{\frametitle}[1]{\oldframetitle{\vspace{-0.3cm}\MakeLowercase{#1}}}
+
+\newcommand{\lastslide}{\setbeamercolor{normal text}{bg=mygray}\begin{frame}\end{frame}}
+
+% ---------- Tables + figures + equations  ----------
+
+\usepackage{caption,subcaption,multirow,booktabs,graphicx}
+\captionsetup{labelformat=empty}
+
+\newcommand{\sfig}{0.26}
+\renewcommand{\arraystretch}{0.9}
+\AtBeginDocument{\setlength{\belowdisplayskip}{3mm}}
+\AtBeginDocument{\setlength{\abovedisplayskip}{3mm}}
+\AtBeginDocument{\setlength{\belowdisplayshortskip}{3mm}}
+\AtBeginDocument{\setlength{\abovedisplayshortskip}{3mm}}
+
+\let\oldincludegraphics\includegraphics 
+\renewcommand{\includegraphics}[2][]{\centering\textcolor{black}{\oldincludegraphics[#1]{#2}}}
+
+% ---------- Alerts ----------
+
+\newcommand{\gal}[1]{\textcolor{Green}{#1}}
+\newcommand{\ral}[1]{\textcolor{Red}{#1}}
+\newcommand{\bal}[1]{\textcolor{NavyBlue}{#1}}
+\newcommand{\al}[1]{\textcolor{RubineRed}{#1}}
+\newcommand{\tgal}[2]{\textcolor<#1>{Green}{#2}}
+\newcommand{\tral}[2]{\textcolor<#1>{Red}{#2}}
+\newcommand{\tbal}[2]{\textcolor<#1>{NavyBlue}{#2}}
+\newcommand{\tal}[2]{\textcolor<#1>{RubineRed}{#2}}
+
+% ---------- Pictograms ----------
+
+\def\up{\textuparrow\,}
+\def\down{\textdownarrow\,}
+\def\flat{\textrightarrow\,}
+\def\then{$\rightsquigarrow\,$}
+\def\so{{$\Rightarrow\,$}}
+\def\tb{\textbar{}}
+\def\tra{$\rangle\,$}
