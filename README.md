@@ -19,7 +19,7 @@ The lecture slides are posted at https://www.pascalmichaillat.org/t4.html.
 
 ## Overview and Bibliographic Information
 
-An overview of the ten papers covered by the lecture slides and how they are interconnected is presented in `overview.md`.
+An overview of the ten papers covered by the lecture slides and how they are interconnected is presented in `overview.md` / `overview.pdf`.
 
 The bibliographic information for the ten papers is contained in the LaTeX bibiography file `bibliography.bib`.
 
