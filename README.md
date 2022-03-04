@@ -1,6 +1,6 @@
 # Papers on Business Cycles
 
-This repository contains lecture slides covering papers written by Pascal Michaillat and coauthors on the topic of business cycles. The lecture slides cover 10 papers:
+This repository contains lecture slides covering ten papers on the topic of business cycles, with a focus on unemployment, stabilization policies, and behavioral macroeconomics. The lecture slides cover the following papers:
 
 * Do Matching Frictions Explain Unemployment? Not in Bad Times [(Michaillat 2012)](https://www.pascalmichaillat.org/1.html)
 * A Theory of Countercyclical Government Multiplier [(Michaillat 2014)](https://www.pascalmichaillat.org/2.html)
@@ -16,6 +16,12 @@ This repository contains lecture slides covering papers written by Pascal Michai
 ## Webpage
 
 The lecture slides are posted at https://www.pascalmichaillat.org/t4.html.
+
+## Overview and Bibliographic Information
+
+An overview of the ten papers covered by the lecture slides and how they are interconnected is presented in `overview.md`.
+
+The bibliographic information for the ten papers is contained in the LaTeX bibiography file `bibliography.bib`.
 
 ## Folder Organization
 
@@ -45,10 +51,6 @@ Each folder contains both source files and PDF file for a set of lecture slides.
 ## Software
 
 The lecture slides were produced on a Mac (macOS Monterey 12.2.1) with the MacTeX-2021 distribution. The LaTeX files should be compiled with pdfTeX. The graphics were produced with Keynote (version 11.2).
-
-## Bibliographic Information
-
-The bibliographic information for the 10 papers covered by the lecture slides is contained in LaTeX bibiography file `bibliography.bib`.
 
 ## Author
 
