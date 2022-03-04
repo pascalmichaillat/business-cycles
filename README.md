@@ -19,13 +19,13 @@ The lecture slides are posted at https://www.pascalmichaillat.org/t4.html.
 
 ## Overview and Bibliographic Information
 
-An overview of the ten papers covered by the lecture slides and how they are interconnected is presented in `overview.md` / `overview.pdf`.
+An overview of the ten papers covered by the lecture slides is presented in `overview.md` / `overview.pdf`.
 
 The bibliographic information for the ten papers is contained in the LaTeX bibiography file `bibliography.bib`.
 
 ## Folder Organization
 
-The material is organized in 9 folders, each associated with separate papers:
+The material is organized in nine folders, each associated with separate papers:
 
 * `rationing` - lecture slides for "Do Matching Frictions Explain Unemployment? Not in Bad Times"
 * `multiplier` - lecture slides for "A Theory of Countercyclical Government Multiplier"
@@ -39,13 +39,13 @@ The material is organized in 9 folders, each associated with separate papers:
 
 ## Folder Content
 
-Each folder contains both source files and PDF file for a set of lecture slides. A folder `folder` contains 6 files:
+Each folder contains both source files and PDF file for a deck of lecture slides. A folder `folder` contains six files:
 
-* `folder.tex` - LaTeX file for the lecture slides
-* `folder.pdf` - PDF file for the lecture slides, compiled from `folder.tex`
+* `folder.tex` - LaTeX file for the slide deck
+* `folder.pdf` - PDF file for the slide deck, compiled from `folder.tex`
 * `presentation.sty` - LaTeX style file for slides made with Beamer, used by `folder.tex`
 * `math.sty` - LaTeX style file containing mathematical formatting and shortcuts, used by `folder.tex`
-* `folder.key` - Keynote file containing all the graphics included in the lecture slides
+* `folder.key` - Keynote file containing all the graphics included in the slide deck
 * `xfolder.pdf` - PDF version of `folder.key`, used by `folder.tex`
 
 ## Software
