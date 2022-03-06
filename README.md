@@ -1,6 +1,6 @@
-# Papers on Business Cycles
+# Ten Papers on Business Cycles
 
-This repository contains lecture slides covering ten papers on the topic of business cycles, with a focus on unemployment, stabilization policy, and behavioral macroeconomics. The papers covered are the following:
+This repository contains lecture slides covering ten papers on the topic of business cycles, with a focus on unemployment and stabilization policy, and a reliance on behavioral assumptions. The papers covered are the following:
 
 * Do Matching Frictions Explain Unemployment? Not in Bad Times [(Michaillat 2012)](https://www.pascalmichaillat.org/1.html)
 * A Theory of Countercyclical Government Multiplier [(Michaillat 2014)](https://www.pascalmichaillat.org/2.html)
