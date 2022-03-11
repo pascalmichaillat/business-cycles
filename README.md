@@ -1,6 +1,6 @@
 # Ten Papers on Business Cycles
 
-This repository contains lecture slides covering ten papers on the topic of business cycles, with a focus on unemployment and stabilization policy, and a reliance on behavioral assumptions. The papers covered are the following:
+This repository contains lecture slides covering ten papers on the topic of business cycles, with a focus on unemployment and stabilization policy. The papers covered are the following:
 
 * Do Matching Frictions Explain Unemployment? Not in Bad Times [(Michaillat 2012)](https://www.pascalmichaillat.org/1.html)
 * A Theory of Countercyclical Government Multiplier [(Michaillat 2014)](https://www.pascalmichaillat.org/2.html)
@@ -19,7 +19,7 @@ The lecture slides are posted at https://www.pascalmichaillat.org/t4.html.
 
 ## Overview and Bibliographic Information
 
-An overview of the ten papers covered by the lecture slides is presented in `overview.md` / `overview.pdf`.
+An overview of the ten papers is presented in `overview.md` / `overview.pdf`.
 
 The bibliographic information for the ten papers is contained in the LaTeX bibiography file `bibliography.bib`.
 
