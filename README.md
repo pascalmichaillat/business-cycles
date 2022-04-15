@@ -12,7 +12,7 @@ This repository contains lecture slides covering eleven papers on business cycle
 8. Pricing under Fairness Concerns [(Eyster, Madarasz, & Michaillat 2021)](https://www.pascalmichaillat.org/8.html)
 9. Beveridgean Unemployment Gap [(Michaillat & Saez 2021)](https://www.pascalmichaillat.org/9.html)
 10. An Economical Business-Cycle Model [(Michaillat & Saez 2022)](https://www.pascalmichaillat.org/7.html)
-11. $u^* = \sqrt{uv}$ [(Michaillat & Saez 2022)](https://www.pascalmichaillat.org/13.html)
+11. u* = √uv [(Michaillat & Saez 2022)](https://www.pascalmichaillat.org/13.html)
 
 ## Webpage
 
