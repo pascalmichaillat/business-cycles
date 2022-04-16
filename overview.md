@@ -1,17 +1,18 @@
-# Overview of the Ten Papers
+# Overview of the Eleven Papers
 
-The lecture slides cover ten papers on business cycles. The papers try to answer a range questions: 
+The lecture slides cover eleven papers on business cycles. The papers try to answer a range questions: 
 
 * What causes unemployment?
 * Why does unemployment fluctuate?
+* What is the efficient unemployment rate?
 * How does the unemployment gap vary over time?
-* How should monetary and fiscal policies respond to fluctuations in the unemployment gap?
+*  How should monetary policy and fiscal  policy respond to fluctuations in the unemployment gap?
 * How are the policies affected by the zero lower bound?
 * And what is the origin of monetary nonneutrality?
 
 ## Models of Unemployment
 
-In matching models, unemployment becomes vanishingly small when unemployed workers search sufficiently hard for jobs. Unemployment also becomes vanishingly small when recruiting costs are sufficiently low. These properties are difficult to reconcile with the long queues of unemployed workers at job bureaus and factory gates observed during the Great Depression. Conversely, in rationing models, jobs are always lacking in the economy. This property is difficult to reconcile with the many unfilled vacancies observed after the Coronavirus Pandemic. 
+In matching models, unemployment becomes vanishingly small when unemployed workers search sufficiently hard for jobs. Unemployment also becomes vanishingly small when recruiting costs are sufficiently low. These properties are difficult to reconcile with the long queues of unemployed workers at job bureaus and factory gates observed during the Great Depression. Conversely, in rationing models, jobs are always lacking in the economy. This property is difficult to reconcile with the many unfilled vacancies observed after the Coronavirus Pandemic.
 
 "Do Matching Friction Explain Unemployment? Not in Bad Times" [(Michaillat 2012)](https://www.pascalmichaillat.org/1.html) blends the matching and rationing models of unemployment to build a model with both frictional unemployment -- caused by difficulties in matching workers and firms -- and rationing unemployment -- caused by a lack of job. The model describes well good and bad times. In bad times, labor demand is low so rationing unemployment is high. Hence total unemployment is high. But, maybe surprisingly, frictional unemployment is low.
 
@@ -19,11 +20,15 @@ The model in "Do Matching Friction Explain Unemployment? Not in Bad Times" suffe
 
 "Aggregate Demand, Idle Time, and Unemployment" [(Michaillat & Saez 2015)](https://www.pascalmichaillat.org/3.html) addresses this limitation by adding to the labor market a product market with similar structure. In this extended model, not all workers are employed, and not all goods and services produced by firms are sold. Unemployment is therefore affected by aggregate demand (Keynesian component), productivity and real wages (classical component), and the matching process (frictional component). Furthermore, the comovements between output, employment, product-market tightness, and labor-market tightness observed in the United States indicate that unemployment fluctuations are caused by fluctuations in labor demand, themselves caused by fluctuations in aggregate demand. 
 
+## Efficient Unemployment Rate
+
+Unlike in neoclassical models, in matching models there is no guarantee of efficiency. The prevailing unemployment rate is generally inefficient: either too high or too low.
+
+"Beveridgean Unemployment Gap" [(Michaillat & Saez 2021)](https://www.pascalmichaillat.org/9.html) develops a measure of the unemployment gap to assess how far the unemployment rate is from its socially efficient level. The measure depends on three sufficient statistics: recruiting cost, social value of nonwork, and elasticity of the Beveridge curve. The measure indicates that in the United States, the unemployment rate is generally inefficient: the unemployment gap is generally nonzero, and it is sharply countercyclical. For instance, the unemployment gap reached 6 percentage points during the Great Recession.
+
+"Beveridgean Unemployment Gap" shows that in the United States, servicing a vacancy requires about one worker, and home production by jobseekers is almost nonexistent. In addition, the US Beveridge curve is close to an hyperbola, so the unemployment rate is inversely related to the vacancy rate. With such symmetry, the efficient unemployment rate is simply the geometric average of the unemployment and vacancy rates: "u* = √uv" [(Michaillat & Saez 2022)](https://www.pascalmichaillat.org/13.html).  The economy is efficient when there are as many vacancies as jobseekers, too tight when there are more vacancies than jobseekers, and too slack when there are more jobseekers than vacancies. For example, in early 2022, the US economy is too tight.
+
 ## Monetary Policy with Unemployment
-
-Unlike in neoclassical models, in matching models there is no guarantee of efficiency. The prevailing unemployment rate is generally inefficient: either inefficiently high or inefficiently low.
-
-"Beveridgean Unemployment Gap" [(Michaillat & Saez 2021)](https://www.pascalmichaillat.org/9.html) develops a measure of the unemployment gap to assess how far the unemployment rate is from its socially efficient level. The paper finds that in the United States, the unemployment rate is generally inefficient: the unemployment gap is generally nonzero, and it is in fact sharply countercyclical. The unemployment gap was above 6 percentage points in the aftermath of the Great Recession. It was below -1 percentage points at the end of the Coronavirus Pandemic.
 
 Since the US unemployment rate is always inefficiently high in slumps, and sometimes inefficiently low in booms, monetary policy has scope to stabilize the unemployment rate better.
 
@@ -54,4 +59,4 @@ Fluctuations in unemployment raise another policy question: how should the gener
 
 In "An Economical Business-Cycle Model", all goods and services are traded between sellers and customers engaged in long-term relationships. In these relationships, a pricing norm dictates that prices grow at a constant rate. Because inflation remains fixed, monetary policy is nonneutral.
 
-"Pricing under Fairness Concerns" [(Eyster, Madarasz, & Michaillat 2021)](https://www.pascalmichaillat.org/8.html) examines the possible origins of such pricing norm. The paper develops a theory of price rigidity that conforms to customers’ and firms’ motivations when setting prices. The theory is consistent with evidence that firms stabilize prices out of fairness to their consumers. The paper also embeds the theory in a New Keynesian model to generate price rigidity. The resulting model describes well the effects of monetary policy. The model also explains why people dislike inflation so much. When monetary policy loosens and inflation rises, customers misperceive markups as higher and feel unfairly treated by firms. Firms partially alleviate these feelings by reducing their markups, which makes monetary policy nonneutral. However, because the alleviation is only partial, people continue to dislike inflation.
+"Pricing under Fairness Concerns" [(Eyster, Madarasz, & Michaillat 2021)](https://www.pascalmichaillat.org/8.html) examines the possible origins of such pricing norm. The paper develops a theory of price rigidity that conforms to customers' and firms' motivations when setting prices. The theory is consistent with evidence that firms stabilize prices out of fairness to their consumers. The paper also embeds the theory in a New Keynesian model to generate price rigidity. The resulting model describes well the effects of monetary policy. The model also explains why people dislike inflation so much. When monetary policy loosens and inflation rises, customers misperceive markups as higher and feel unfairly treated by firms. Firms partially alleviate these feelings by reducing their markups, which makes monetary policy nonneutral. However, because the alleviation is only partial, people continue to dislike inflation.
